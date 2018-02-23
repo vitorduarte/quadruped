@@ -7,4 +7,5 @@ model = tf.global_variables_initializer()
 with tf.Session() as session:
 	session.run(model)
 	print(x.shape)
-	print(session.run(x+y))
+	print(session.run(x))
+	print('test')
