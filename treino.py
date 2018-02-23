@@ -8,4 +8,4 @@ with tf.Session() as session:
 	session.run(model)
 	print(x.shape)
 	print(session.run(x))
-	print('test')
+	print('testando')
