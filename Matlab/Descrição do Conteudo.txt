@@ -31,4 +31,8 @@
 	Arquivos necessário para realizar a comunicação do matlab com o vrep.
 
 #Marchas_Pedro_Vitor:  
-	Marchas geradas a partir dos treinamentos, em radianos e em .mat; 	
+	Marchas geradas a partir dos treinamentos, em radianos e em .mat;
+
+#Resultados_treinamento:
+	#resultados dos treinamentos utilizando o gamultobj. São workspaces do matlab. Em optimresults existe informações
+	de score, melhores individuos das populações e melhores individuos. 	
