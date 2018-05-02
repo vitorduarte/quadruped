@@ -1,0 +1,34 @@
+~ Esse arquivo tem como objetivo descrever os conteúdos desse repositório ~
+
+#cria_pose_unica.m: 
+	É o código no matlab que funciona como fitness function para o app de otimização do matlab (gamultobj). Ele recebe
+	do aplicativo 5 variáveis que são parâmetros das poses criadas e retorna as funções de score (que podem ser modificadas
+	de acordo com seu objetivo). Descrições mais detalhadas estão descritas no código.
+
+#cria_pose.m: 
+	Código no matlab que funciona como fitness function para o app de otimização do matlab (gamultobj). Ele recebe uma
+	matriz 4x4, em que cada elemento é uma pose. As linhas representam uma pata e as colunas, os estados de cada pata 
+	em um determinado instante de tempo. Código está incompleto. A ideia é verificar se o algoritmo genético aprende
+	uma configuração ótima de poses para o robô, diferente da solução que se espera, que é implementada no código
+	anterior.
+
+#inverse_kinematics.m:
+	Código no matlab que implementa cinemática inversa de uma pata do robô. Recebe como entrada o tool point, que é 
+	a posição que se deseja colocar a ponta da pata do robô e retorna os angulos de junta1 ("ombro" alto), junta2("ombro" 
+	baixo) e junta3 (joelho).
+
+#marchando_vrep.m: 
+	Código no matlab que funciona como fitness function para o app de otimização do matlab (gamultobj). Ele recebe uma
+	matriz 480x12, em que as colunas são angulos em radianos para cada uma das 12 juntas e cada linha é o estado da
+	disposição das patas do robo. Código incompleto. A ideia era verificar se o algoritmo genético aprendia uma marcha
+	apenas a partir de ângulos em cada junta e de suas fitness junction.
+
+#move_uma_junta.m:
+	Código no matlab que serve para testar o funcionamento das juntas no vrep. Para ele funcionar deve-se iniciar o vrep
+	primeiro e depois executar o código no matlab.
+
+#remAPi.m;remoteApi.dll: remoteApiProto.m
+	Arquivos necessário para realizar a comunicação do matlab com o vrep.
+
+#Marchas_Pedro_Vitor:  
+	Marchas geradas a partir dos treinamentos, em radianos e em .mat; 	
