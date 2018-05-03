@@ -216,6 +216,7 @@ int marcha_quadrupede(){
         arq>>lido[3]>>lido[4]>>lido[5];
         arq>>lido[6]>>lido[7]>>lido[8];
         arq>>lido[9]>>lido[10]>>lido[11];
+	cout<<"Valores: "<< lido;
         for(j=1; j<13; j++)
         {
             anguloscor[j-1]=lido[j-1]+vetor_centro[j-1]+cor_fat[j-1];
