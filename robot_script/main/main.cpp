@@ -91,7 +91,7 @@ void controle (union sigval sigval);
     
     static timestruct_t timestruct;
     
-    string marcha = "~/quad_vitor_pedro/Marchas_Pedro_Vitor/Marchas/marcha_teste.txt";
+    string marcha = "marcha_teste.txt";
     ifstream arq(marcha.c_str());
     
 void timer_start (void)
@@ -216,9 +216,10 @@ int marcha_quadrupede(){
         arq>>lido[3]>>lido[4]>>lido[5];
         arq>>lido[6]>>lido[7]>>lido[8];
         arq>>lido[9]>>lido[10]>>lido[11];
-	cout<<"Valores: "<< lido;
+
         for(j=1; j<13; j++)
         {
+	    cout<<"Lido["<<j<<"]: "<<lido[j-1];
             anguloscor[j-1]=lido[j-1]+vetor_centro[j-1]+cor_fat[j-1];
             if(lido[j-1]+cor_fat[j-1]>280)anguloscor[j-1]=vetor_centro[j-1]+280;
             else if(lido[j-1]+cor_fat[j-1]<-280)anguloscor[j-1]=vetor_centro[j-1]-280;
