@@ -33,7 +33,7 @@
 
 #define EXPORTAR_DADOS                  1
 #define MARCHA                          1
-#define CONTROLE                        0
+#define CONTROLE                        1
 
 GDATALOGGER gDataLogger;
 
@@ -91,7 +91,7 @@ void controle (union sigval sigval);
     
     static timestruct_t timestruct;
     
-    string marcha = "marchateste.txt";
+    string marcha = "~/quad_vitor_pedro/Matlab/Marchas_Pedro_Vitor/move_pata_7.txt";
     ifstream arq(marcha.c_str());
     
 void timer_start (void)
