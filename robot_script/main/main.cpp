@@ -439,7 +439,7 @@ int main(){
     cmd.config_ram(portHandler, packetHandler);
     cmd.write_torque(portHandler, packetHandler, BROADCASTID, 1);
     cmd.write_max_torque(portHandler, packetHandler, BROADCASTID, MAX_TORQUE);
-    fstream arq2("calibra.txt");
+    fstream arq2("calibra2.txt");
     
     arq2>>vetor_centro[0]>>vetor_centro[1]>>vetor_centro[2];
     arq2>>vetor_centro[3]>>vetor_centro[4]>>vetor_centro[5];
