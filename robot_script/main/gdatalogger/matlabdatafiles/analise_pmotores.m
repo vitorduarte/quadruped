@@ -1,6 +1,6 @@
 clear all
 close all
-load('data.mat');
+load('results.mat');
 
 ver_sem_filtro = 0;
 

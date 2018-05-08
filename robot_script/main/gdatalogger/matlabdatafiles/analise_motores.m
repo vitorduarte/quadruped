@@ -1,6 +1,6 @@
 clear all
 close all
-load('data.mat');
+load('results.mat');
 size = num2str(pitch_angle_size-1);
 tsim = 10;
 eval(['pitch_angle' '=' 'pitch_angle_0_' num2str(size) ';']);

@@ -1,6 +1,6 @@
 clear all
 close all
-load('data.mat');
+load('results.mat');
 size = (pitch_angle_size-1);
 eval(['pitch_angle' '=' 'pitch_angle_0_' num2str(size) ';']);
 eval(['roll_angle' '=' 'roll_angle_0_' num2str(size) ';']);
