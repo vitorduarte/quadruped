@@ -23,7 +23,7 @@
 
 #define DEVICENAME                      "/dev/ttyUSB0"
 #define BROADCASTID			            254
-#define TASK_PERIOD_US                  200000   //200000
+#define TASK_PERIOD_US                  800000   //200000
 #define PI                              3.14159265
 #define MAX_TORQUE                      1023
 
