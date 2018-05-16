@@ -1,3 +1,4 @@
+
 #include "include/command.h"
 #include "medicao.h"
 #include "filtro.h"
@@ -22,7 +23,7 @@
 
 #define DEVICENAME                      "/dev/ttyUSB0"
 #define BROADCASTID			            254
-#define TASK_PERIOD_US                  200000
+#define TASK_PERIOD_US                  200000   //200000
 #define PI                              3.14159265
 #define MAX_TORQUE                      1023
 
@@ -88,12 +89,12 @@ void controle (union sigval sigval);
 
     struct termios tty;
     struct termios tty_old;
-    
+
     static timestruct_t timestruct;
-    
-    string marcha = "marchateste.txt";
+
+    string marcha = "marcha_teste4.txt";
     ifstream arq(marcha.c_str());
-    
+
 void timer_start (void)
 {
     struct itimerspec itimer = { { 1, 0 }, { 1, 0 } };
@@ -177,21 +178,21 @@ return USB;
 
 
 int modo_velocidade(uint8_t id){
-    
+
     cmd.write_cw_angle_limit(portHandler, packetHandler, id, 0);
     cmd.write_ccw_angle_limit(portHandler, packetHandler, id, 0);
-    
+
     return 0;
     }
-    
+
 int modo_posicao(uint8_t id){
-    
+
     cmd.write_cw_angle_limit(portHandler, packetHandler, id, 1);
     cmd.write_ccw_angle_limit(portHandler, packetHandler, id, 1023);
-    
+
     return 0;
     }
-    
+
 double controlador(double Kd){
     double B;
     #if CONTROLE
@@ -200,10 +201,10 @@ double controlador(double Kd){
     #endif
     B = d_k*(Kd*tau_p/pow(tam/1000,2) + Kd/(tam/1000)) + d_k1*(-2*Kd*tau_p/pow(tam/1000,2) - Kd/(tam/1000)) + d_k2*(2*Kd*tau_p/pow(tam/1000,2)) + pd_k[i-1]*(tau_d/(tam/1000) + 1) - pd_k1[i-1]*(tau_d/(tam/1000));
     p_k[i-1] = (B - p_k2[i-1]*(tau_d*tau_p/pow(tam/1000,2)) - p_k1[i-1]*(-2*tau_d*tau_p/pow(tam/1000,2) - (tau_d + tau_p)/(tam/1000) )) / (tau_d*tau_p/pow(tam/1000,2) + (tau_d + tau_p)/(tam/1000) +1);
-    
+
     return p_k[i-1];
     }
-    
+
 int marcha_quadrupede(){
 
    // uint8_t param_goal_position[2];
@@ -211,7 +212,7 @@ int marcha_quadrupede(){
     int lido[12] = {0,0,0,0,0,0,0,0,0,0,0,0};           //buffer leitura
     int atual[12];
     int cor_fat[12]={0,0,0,0,0,0,0,0,0,0,0,0};
-    
+
         arq>>lido[0]>>lido[1]>>lido[2];
         arq>>lido[3]>>lido[4]>>lido[5];
         arq>>lido[6]>>lido[7]>>lido[8];
@@ -232,12 +233,12 @@ int marcha_quadrupede(){
     }
 
 void controle(union sigval arg){
-    
+
 //    T = time_gettime(&timestruct);
 //	time_reset(&timestruct);
 //	tempo += T;
-    
-    
+
+
     medicao(angulos, USB);
     roll_medido = (double)angulos[0];
     pitch_medido = (double)angulos[1];
@@ -254,7 +255,7 @@ void controle(union sigval arg){
 
    if(abs(roll_medido)<threshold){roll_medido = 0;}
    if(abs(pitch_medido)<threshold){pitch_medido = 0;}
-   
+
     velocidade_roll = (roll_medido - roll)*(PI/180)/(tam/1000);
     velocidade_pitch = (pitch_medido - pitch)*(PI/180)/(tam/1000);
 
@@ -262,11 +263,11 @@ void controle(union sigval arg){
     gDataLogger_InsertVariable(&gDataLogger,(char*) "roll_angle",&roll_medido);
     gDataLogger_InsertVariable(&gDataLogger,(char*) "pitch_angle",&pitch_medido);
 
-    
+
       if(velocidade_roll>0){
         queda_roll = ROLL_ESQUERDA;
         K_roll_R = 0, K_roll_L = 1.5;
-        
+
         K[1-1] = K_roll_L;
         K[4-1] = K_roll_R;
         K[7-1] = K_roll_R*1.1;
@@ -275,13 +276,13 @@ void controle(union sigval arg){
         else{
         queda_roll = ROLL_DIREITA;
         K_roll_R = 1.5, K_roll_L = 0;
-        
+
         K[1-1] = K_roll_L;
         K[4-1] = K_roll_R;
         K[7-1] = K_roll_R*1.1;
         K[10-1] = K_roll_L;
             }
-            
+
         if(velocidade_pitch>0){
         queda_pitch = PITCH_TRAS;
         K_pitch_F = 0, K_pitch_R = 1.5;
@@ -294,7 +295,7 @@ void controle(union sigval arg){
         K[9-1] = -K_pitch_F*K_DOWN;
         K[11-1] = K_pitch_F*K_UP;
         K[12-1] = K_pitch_F*K_DOWN;
-        
+
         }
         else{
         queda_pitch = PITCH_FRENTE;
@@ -309,11 +310,11 @@ void controle(union sigval arg){
         K[11-1] = K_pitch_F*K_UP;
         K[12-1] = K_pitch_F*K_DOWN;
             }
-    
+
     d_roll_k = -roll_medido;
     d_pitch_k = -pitch_medido;
     marcha_quadrupede();
-    
+
     i = 1;
     while(i<13){
         if(i == 1 || i == 4 || i == 7 || i == 10){      //Roll
@@ -333,15 +334,15 @@ void controle(union sigval arg){
     #else
     pd_k[i-1] = ler_posicao(posicao_inicial[i-1]);
     #endif
-    
-        
+
+
     //---------------------- Leituras dos Motores --------------------------//
     //v_medicao_int = cmd.read_mov_speed(portHandler, packetHandler, i);
     //v_medicao[i-1] = ler_velocidade(v_medicao_int);
-    
+
     posicao_atual[i-1] = cmd.read_pos(portHandler, packetHandler, i);
     posicao_atual_graus[i-1] = ler_posicao(posicao_atual[i-1]);
-    
+
     //----------------------- Controlador -----------------------------//
     posicao_desejada_graus[i-1] = controlador(K[i-1]*(tam/1000));
     cmd.write_pos(portHandler, packetHandler, i, posicao(posicao_desejada_graus[i-1]));
@@ -351,17 +352,16 @@ void controle(union sigval arg){
     pd_k1[i-1] = pd_k[i-1];
 	i++;
     }
-    
+
     roll = roll_medido;
     pitch = pitch_medido;
-    
+
     d_roll_k1 = d_roll_k;
     d_pitch_k1 = d_pitch_k;
-    
+
     d_roll_k2 = d_roll_k1;
     d_pitch_k2 = d_pitch_k1;
-    
-    
+
     //----------------------- Atualizacao de Medicoes ----------------------//
     gDataLogger_InsertVariable(&gDataLogger,(char*) "p_motor1",&posicao_atual_graus[0]);
     gDataLogger_InsertVariable(&gDataLogger,(char*) "p_motor2",&posicao_atual_graus[1]);
@@ -405,20 +405,19 @@ int main(){
     K[9-1] = -K_pitch_F*K_DOWN;
     K[11-1] = K_pitch_F*K_UP;
     K[12-1] = K_pitch_F*K_DOWN;
-    
     //----------posicao inicial------------//
-    posicao_inicial[0] = 497;
-    posicao_inicial[1] = 498;
-    posicao_inicial[2] = 503;
-    posicao_inicial[3] = 132;
-    posicao_inicial[4] = 543;
-    posicao_inicial[5] = 521;
-    posicao_inicial[6] = 540;
-    posicao_inicial[7] = 527;
-    posicao_inicial[8] = 347;
-    posicao_inicial[9] = 497;
-    posicao_inicial[10] = 549;
-    posicao_inicial[11] = 500;
+    posicao_inicial[0] = 509;
+    posicao_inicial[1] = 524;
+    posicao_inicial[2] = 470;
+    posicao_inicial[3] = 441;
+    posicao_inicial[4] = 544;
+    posicao_inicial[5] = 524;
+    posicao_inicial[6] = 528;
+    posicao_inicial[7] = 529;
+    posicao_inicial[8] = 345;
+    posicao_inicial[9] = 450;
+    posicao_inicial[10] = 555;
+    posicao_inicial[11] = 528;
 
 
     //--------------------------Inicializacao------------------------------//
@@ -439,8 +438,8 @@ int main(){
     cmd.config_ram(portHandler, packetHandler);
     cmd.write_torque(portHandler, packetHandler, BROADCASTID, 1);
     cmd.write_max_torque(portHandler, packetHandler, BROADCASTID, MAX_TORQUE);
-    fstream arq2("calibra.txt");
-    
+    fstream arq2("calibra2.txt");
+
     arq2>>vetor_centro[0]>>vetor_centro[1]>>vetor_centro[2];
     arq2>>vetor_centro[3]>>vetor_centro[4]>>vetor_centro[5];
     arq2>>vetor_centro[6]>>vetor_centro[7]>>vetor_centro[8];
@@ -470,7 +469,7 @@ int main(){
     gDataLogger_DeclareVariable(&gDataLogger,(char*) "p_motor10",(char*) "deg",1,1,1000);
     gDataLogger_DeclareVariable(&gDataLogger,(char*) "p_motor11",(char*) "deg",1,1,1000);
     gDataLogger_DeclareVariable(&gDataLogger,(char*) "p_motor12",(char*) "deg",1,1,1000);
-    
+
     gDataLogger_DeclareVariable(&gDataLogger,(char*) "T",(char*) "s",1,1,1000);
     gDataLogger_DeclareVariable(&gDataLogger,(char*) "tempo",(char*) "s",1,1,1000);
 
@@ -482,10 +481,10 @@ int main(){
     //    while(i<13){
     //        teste = cmd.read_pos(portHandler, packetHandler, i);
     //        printf("posicao de %d e %d \n",i,teste);
-    //        i++;         
-    //        }   
+    //        i++;
+    //        }
 	//}
-    
+
     i = 1;
     while(i<13){
         cmd.write_pos(portHandler, packetHandler, i, posicao_inicial[i-1]);
@@ -493,17 +492,17 @@ int main(){
         p_k2[i-1] = ler_posicao(posicao_inicial[i-1]);
         p_k1[i-1] = ler_posicao(posicao_inicial[i-1]);
         pd_k1[i-1] = ler_posicao(posicao_inicial[i-1]);
-        i++;        
+        i++;
     }
-    
-    
+
+
     //cmd.write_torque(portHandler, packetHandler, BROADCASTID, 1);
 
     printf("Pressione qualquer tecla para iniciar \n");
     cmd.getch();
     cmd.write_torque_limit(portHandler, packetHandler, BROADCASTID, MAX_TORQUE);
     USB = inicializacao();
-    
+
     timer_start ();
     time_reset(&timestruct);
     printf("Programa em andamento, pressione qualquer tecla para finalizar \n");
@@ -520,8 +519,8 @@ int main(){
     timer_stop ();
 	gDataLogger_Close(&gDataLogger);
     close(USB);
-    arq.close();    
-    
+    arq.close();
+
     //----------------------------------Finalize---------------------------------------//
     cmd.write_torque(portHandler, packetHandler, BROADCASTID, 0);
     printf("Sessao finalizada \n");
