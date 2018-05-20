@@ -50,22 +50,26 @@ def fix_mirror(angle_matrix, invert=True):
 
 
 def main():
-    np.set_printoptions(precision=4, suppress=True)
-    #TODO: Get the kinematic parameters from function call?
-    kinematic_parameters = np.array([45, 45, 20, 0, 0])
-    padraocaminhada = np.matrix('3 4 1 2; 1 2 3 4;3 4 1 2;1 2 3 4')
-    T = 22.144
-
-    if len(kinematic_parameters) != 5:
-        print('Kinematic parameters error, should be a five elements vector')
+    if len(sys.argv) != 7:
+        print('Wrong usage')
+        print('\nSend the kinematic parameters and the filename as parameters')
+        print('\tExample: ./gait_generation 45 45 20 0 0 my_gait.txt\n')
         exit(1)
     else:
-        angle_back = kinematic_parameters[0]
-        angle_front = kinematic_parameters[1]
-        x_pos = kinematic_parameters[2]
-        y_pos = kinematic_parameters[3]
-        z_pos = kinematic_parameters[4]
+        try:
+            angle_back = float(sys.argv[1])
+            angle_front = float(sys.argv[2])
+            x_pos = float(sys.argv[3])
+            y_pos = float(sys.argv[4])
+            z_pos = float(sys.argv[5])
 
+        except NameError:
+            print('Invalid kinetic parameters')
+
+    np.set_printoptions(precision=4, suppress=True)
+    padraocaminhada = np.matrix('3 4 1 2; 1 2 3 4;3 4 1 2;1 2 3 4')
+    T = 22.144
+    output_filename = '../main/gaits/{}.txt'.format(sys.argv[6])
 
     p1 = np.array([T, 0, 0])
     p2 = np.array([T*np.sin((np.pi/2) - (np.deg2rad(angle_back))), 0, T*np.cos((np.pi/2)- np.deg2rad(angle_back))])
@@ -98,7 +102,7 @@ def main():
     angle_matrix = angle_matrix*1023/300
 
     #TODO: Get the filename from function call
-    np.savetxt('../main/gaits/test.txt', angle_matrix.astype(int), fmt='%i')
+    np.savetxt(output_filename, angle_matrix.astype(int), fmt='%i')
 
 
 if __name__ == "__main__":
