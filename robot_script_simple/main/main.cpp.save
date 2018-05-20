@@ -3,7 +3,6 @@
 #include <fcntl.h>      // File control definitions
 #include <errno.h>      // Error number definitions
 #include <termios.h>    // POSIX terminal control definitions
-#include <sys/time.h>
 
 #define Kp_roll 1
 #define Kd_roll 0
@@ -21,47 +20,6 @@
 
 using namespace std;
 
-vector<float> acc2pos(vector<float> acceleration, vector<float> timestamp) {
-    vector<float> position;
-    vector<float> velocity;
-    float actual_value;
-    float next_value;
-    float instant_value;
-    float period;
-
-    for(int i=0; i < acceleration.size()-1; i++){
-        actual_value = acceleration[i];
-        next_value  = acceleration[i+1];
-	period = timestamp[i+1] - timestamp[i];
-
-        instant_value = (next_value + actual_value)*period/2;
-	velocity.push_back(instant_value);
-    }
-
-    for(int i=0; i < velocity.size()-1; i++){
-        actual_value = velocity[i];
-        next_value  = velocity[i+1];
-	period = timestamp[i+2] - timestamp[i+1];
-
-        instant_value = (next_value + actual_value)*period/2;
-	position.push_back(instant_value);
-    }
-
-    return(position);
-}
-
-void print_vector(vector<float> vec) {
-    for(int i=0; i<vec.size(); i++){
-        cout << vec[i] << "\t";
-    }
-}
-
-void write_file_vec(vector<float> vec, ofstream &output_file){
-    for(int i=0; i<vec.size(); i++){
-        output_file << vec[i] << " ";
-    }
-
-}
 int main(int argc, char *argv[])
 {
     command cmd;
@@ -71,16 +29,12 @@ int main(int argc, char *argv[])
     ifstream arq(marcha.c_str());
     fstream arq2("calibra.txt");
     ofstream arq3("valores_sensores.txt");
-    ofstream arq_time("timestamps.txt");
-    ofstream arq_x("acceleration_x.txt");
-    ofstream arq_y("acceleration_y.txt");
-    ofstream arq_z("acceleration_z.txt");
-
 
     char *dev_name = (char*)DEVICENAME;
     char buf = '\0';
     char response[1024];
-
+    
+    
     dynamixel::PacketHandler *packetHandler = dynamixel::PacketHandler::getPacketHandler(1);
     dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler(dev_name);
     dynamixel::GroupSyncWrite groupSyncWrite(portHandler, packetHandler, 30, 2);
@@ -110,24 +64,18 @@ int main(int argc, char *argv[])
     size_t inic, fim;
     
     string temp,temp2;
-    
+
     vector<float> xAccel;
     vector<float> yAccel;
     vector<float> zAccel;
-    vector<float> xPos;
+    vector<float> yVel;
     vector<float> yPos;
-    vector<float> zPos;
     vector<float> S1;
     vector<float> S2;
     vector<float> S3;
     vector<float> S4;
     vector<float> roll;
     vector<float> pitch;
-    vector<float> timestamp;
-
-    long time_seconds, time_useconds;
-    struct timeval init_time, actual_time;
-    gettimeofday(&init_time, NULL);
 
     struct termios tty;
     struct termios tty_old;
@@ -332,33 +280,20 @@ int main(int argc, char *argv[])
             xAccel.push_back(temp_val[1]);
             yAccel.push_back(-temp_val[0]);
             zAccel.push_back(temp_val[2]);
-
-            gettimeofday(&actual_time, NULL);
-            time_seconds = actual_time.tv_sec - init_time.tv_sec;
-            time_useconds = actual_time.tv_usec - init_time.tv_usec;
-            //time_useconds = float(time_useconds*pow(10, -6));
-            //timestamp.push_back((time_seconds * 1000 + time_useconds/1000.0) + 0.5);
-            timestamp.push_back((time_seconds + time_useconds/1000000.0));
+	    cout << xAccel.size() << endl;
+	    cout << "xAccel: " << temp_val[1] << "yAccel: " << temp_val[0] << "zAccel: " << temp_val[2] << endl;
 
         }while(abs(atual[0]-anguloscor[0])>10||abs(atual[1]-anguloscor[1])>10||abs(atual[2]-anguloscor[2])>10||
             abs(atual[3]-anguloscor[3])>10||abs(atual[4]-anguloscor[4])>10||abs(atual[5]-anguloscor[5])>10||
             abs(atual[6]-anguloscor[6])>10||abs(atual[7]-anguloscor[7])>10||abs(atual[8]-anguloscor[8])>10||
-            abs(atual[9]-anguloscor[9])>10||abs(atual[10]-anguloscor[10])>10||abs(atual[11]-anguloscor[11])>10);
+    
+        abs(atual[9]-anguloscor[9])>10||abs(atual[10]-anguloscor[10])>10||abs(atual[11]-anguloscor[11])>10);
 
+	for(vector<float>::iterator it = zAccel.begin(); it != zAccel.end(); ++it){
+		cout << *it;
+    } 
         contador++;
     }
-    //print_vector(timestamp);
-    zPos = acc2pos(zAccel, timestamp);
-    xPos = acc2pos(xAccel, timestamp);
-    yPos = acc2pos(yAccel, timestamp);
-    write_file_vec(xAccel,arq_x);
-    write_file_vec(yAccel,arq_y);
-    write_file_vec(zAccel,arq_z);
-    write_file_vec(timestamp, arq_time);
-    //cout << "ACELERAÇÃO EM Z" << endl;
-    //print_vector(zAccel);
-    //cout << "\n\nPOSICAO EM Z" << endl;
-    //print_vector(zPos);
     arq.close();
     arq3.close();
     getchar();

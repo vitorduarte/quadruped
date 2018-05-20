@@ -1,4 +1,4 @@
-#include "include/command.h"
+]#include "include/command.h"
 #include <unistd.h>     // UNIX standard function definitions
 #include <fcntl.h>      // File control definitions
 #include <errno.h>      // Error number definitions
@@ -6,7 +6,7 @@
 #include <sys/time.h>
 
 #define Kp_roll 1
-#define Kd_roll 0
+#/define Kd_roll 0
 #define Kp_pitch 1
 #define Kd_pitch 0
 #define BAUDRATE                        1000000				// Padrao p/este trabalho
@@ -56,12 +56,6 @@ void print_vector(vector<float> vec) {
     }
 }
 
-void write_file_vec(vector<float> vec, ofstream &output_file){
-    for(int i=0; i<vec.size(); i++){
-        output_file << vec[i] << " ";
-    }
-
-}
 int main(int argc, char *argv[])
 {
     command cmd;
@@ -71,11 +65,6 @@ int main(int argc, char *argv[])
     ifstream arq(marcha.c_str());
     fstream arq2("calibra.txt");
     ofstream arq3("valores_sensores.txt");
-    ofstream arq_time("timestamps.txt");
-    ofstream arq_x("acceleration_x.txt");
-    ofstream arq_y("acceleration_y.txt");
-    ofstream arq_z("acceleration_z.txt");
-
 
     char *dev_name = (char*)DEVICENAME;
     char buf = '\0';
@@ -351,14 +340,10 @@ int main(int argc, char *argv[])
     zPos = acc2pos(zAccel, timestamp);
     xPos = acc2pos(xAccel, timestamp);
     yPos = acc2pos(yAccel, timestamp);
-    write_file_vec(xAccel,arq_x);
-    write_file_vec(yAccel,arq_y);
-    write_file_vec(zAccel,arq_z);
-    write_file_vec(timestamp, arq_time);
-    //cout << "ACELERAÇÃO EM Z" << endl;
-    //print_vector(zAccel);
-    //cout << "\n\nPOSICAO EM Z" << endl;
-    //print_vector(zPos);
+    cout << "ACELERAÇÃO EM Z" << endl;
+    print_vector(zAccel);
+    cout << "\n\nPOSICAO EM Z" << endl;
+    print_vector(zPos);
     arq.close();
     arq3.close();
     getchar();
