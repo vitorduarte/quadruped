@@ -23,7 +23,7 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     command cmd;
-    string marcha="marcha";
+    string marcha="gait/";
     marcha+=argv[1];
     marcha+=".txt";
     ifstream arq(marcha.c_str());
@@ -33,8 +33,8 @@ int main(int argc, char *argv[])
     char *dev_name = (char*)DEVICENAME;
     char buf = '\0';
     char response[1024];
-    
-    
+
+
     dynamixel::PacketHandler *packetHandler = dynamixel::PacketHandler::getPacketHandler(1);
     dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler(dev_name);
     dynamixel::GroupSyncWrite groupSyncWrite(portHandler, packetHandler, 30, 2);
@@ -57,12 +57,12 @@ int main(int argc, char *argv[])
     int USB = open( "/dev/ttyACM0", O_RDWR| O_NOCTTY );
     close(USB);
     USB = open( "/dev/ttyACM0", O_RDWR| O_NOCTTY );
-    
+
     float temp_val[7];
     float h;
 
     size_t inic, fim;
-    
+
     string temp,temp2;
 
     vector<float> xAccel;
@@ -244,7 +244,7 @@ int main(int argc, char *argv[])
             abs(atual[6]-anguloscor[6])>10||abs(atual[7]-anguloscor[7])>10||abs(atual[8]-anguloscor[8])>10||
             abs(atual[9]-anguloscor[9])>10||abs(atual[10]-anguloscor[10])>10||abs(atual[11]-anguloscor[11])>10);
 
-        
+
         if(contador%10==0){
             memset(temp_val, 0, sizeof temp_val);
             n=0;
