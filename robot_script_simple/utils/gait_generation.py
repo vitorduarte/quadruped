@@ -20,7 +20,6 @@ def inverse_kinematic(point_of_interest, degrees=False):
     a = L2*np.cos(theta_1) #L2 projection in xz plane with theta_1
     b = L3*np.cos(theta_1) #L3 projection in xz plane with theta_1
 
-
     # Cosine rule to compute theta_3
     k = (-np.power(x_c, 2) - np.power(z_c,2) + np.power(a, 2) + np.power(b, 2))/(2*a*b)
     theta_3 = np.pi - np.arccos(k);
@@ -39,8 +38,8 @@ def fix_mirror(angle_matrix, invert=True):
     A = np.array([1, 1, 1, -1, -1, -1, -1, -1, -1, 1, 1, 1])
     I = np.array([1, -1, -1, 1, -1, -1, 1, -1, -1, 1, -1, -1])
 
-    A = np.repeat(A,4).reshape(-1,12)
-    I = np.repeat(I,4).reshape(-1,12)
+    A = np.tile(A,4).reshape(4,12)
+    I = np.tile(I,4).reshape(4,12)
 
     angle_matrix = np.multiply(angle_matrix, A)
 
@@ -53,7 +52,7 @@ def fix_mirror(angle_matrix, invert=True):
 def main():
     np.set_printoptions(precision=4, suppress=True)
     #TODO: Get the kinematic parameters from function call?
-    kinematic_parameters = np.array([30, 54.56, 20.94, -0.31, 0.74])
+    kinematic_parameters = np.array([45, 45, 20, 0, 0])
     padraocaminhada = np.matrix('3 4 1 2; 1 2 3 4;3 4 1 2;1 2 3 4')
     T = 22.144
 
@@ -95,7 +94,7 @@ def main():
             continue
         angle_matrix = np.concatenate((angle_matrix,pose_angles), axis=1)
 
-    angle_matrix = fix_mirror(angle_matrix)
+    angle_matrix = fix_mirror(angle_matrix, invert=True)
     angle_matrix = angle_matrix*1023/300
 
     #TODO: Get the filename from function call
