@@ -71,10 +71,10 @@ int main(int argc, char *argv[])
     ifstream arq(marcha.c_str());
     fstream arq2("calibra.txt");
     ofstream arq3("valores_sensores.txt");
-    ofstream arq_time("timestamps.txt");
-    ofstream arq_x("acceleration_x.txt");
-    ofstream arq_y("acceleration_y.txt");
-    ofstream arq_z("acceleration_z.txt");
+    ofstream arq_time("measurements/timestamps.txt");
+    ofstream arq_x("measurements/acceleration_x.txt");
+    ofstream arq_y("measurements/acceleration_y.txt");
+    ofstream arq_z("measurements/acceleration_z.txt");
 
 
     char *dev_name = (char*)DEVICENAME;
