@@ -355,8 +355,8 @@ int main(int argc, char *argv[])
     write_file_vec(yAccel,arq_y);
     write_file_vec(zAccel,arq_z);
     write_file_vec(timestamp, arq_time);
-    //cout << "ACELERAÇÃO EM Z" << endl;
-    //print_vector(zAccel);
+    cout << "ACELERAÇÃO EM Z" << endl;
+    print_vector(zAccel);
     //cout << "\n\nPOSICAO EM Z" << endl;
     //print_vector(zPos);
     arq.close();
