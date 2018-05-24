@@ -1,5 +1,11 @@
 clear all
 
+%media robo parado
+
+%mean_z = 10.2199
+%mean_x = =0.0555
+%mean_y = -0.5626
+
 x_id = fopen('measurements/acceleration_x.txt', 'r');
 y_id = fopen('measurements/acceleration_y.txt', 'r');
 z_id = fopen('measurements/acceleration_z.txt', 'r');
@@ -12,7 +18,11 @@ timestamp = fscanf(t_id, '%f');
 vel(1) = 0;
 pos(1) =0;
 cont = 0;
-%Y = filter(D,zaccel)% - 9.874;
+D = designfilt('lowpassfir', 'PassbandFrequency', 75, 'StopbandFrequency', 200, 'PassbandRipple', 1, 'StopbandAttenuation', 60, 'SampleRate', 1000);
+Y = filter(D,zaccel)% - 9.874
+mean_z = mean(zaccel);
+mean_x = mean(xaccel);
+mean_y = mean(yaccel);
 %zaccel = zaccel%- 9.874;
 
 for i=2:(length(zaccel)-1)
@@ -38,7 +48,9 @@ pos = 100*pos;
 %hold on
 %plot(timestamp(1:length(timestamp)-2),pos)
 %hold on
-plot(timestamp(1:length(timestamp)), zaccel)
+plot(timestamp(1:length(timestamp)), Y);
+hold on
+plot (timestamp, zaccel);
 %hold on
 %plot(timestamp,zaccel);
 %hold on
