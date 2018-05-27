@@ -11,20 +11,57 @@ function score = online_training(parametros)
     dlmwrite('parameters.txt',parameters, 'delimiter', ' ','newline', 'pc');
     
     
-    dist = 'distância medida';
-    temp = 'tempo';
+    dist = 'Distância medida: ';
+    temp = 'Tempo: ';
     
-    message1 = 'inverso da velocidade: ';
     distancia = input(dist);
+    tf = isfloat(distancia);
+    TF = isempty(distancia);
+    while (tf == 0) || (TF == 1)
+        %score = inf;
+        %print('Distancia espera um valor do tipo float.');
+        distancia = input(dist);
+        tf = isfloat(distancia);
+        TF = isempty(distancia);
+    end
     tempo = input(temp);
+    tf = isfloat(tempo);
+    TF = isempty(tempo);
+    while (tf == 0) || (TF == 1)
+        %score = inf;
+        %print('Distancia espera um valor do tipo float.');
+        tempo = input(temp);
+        tf = isfloat(tempo);
+        TF = isempty(tempo);
+    end
     score(1) = tempo/distancia;
     
-    message2 = 'queda em z: '; %nota de 0 a 10  
-    score(2) = input(message2);
+    message2 = 'Queda em z: '; %nota de 0 a 10  
+    queda_z = input(message2);
+    tf = isfloat(queda_z);
+    TF = isempty(queda_z);
+    while (tf == 0) || (TF == 1)
+        %score = inf;
+        %print('Distancia espera um valor do tipo float.');
+        queda_z = input(message2);
+        tf = isfloat(queda_z);
+        TF = isempty(queda_z);        
+    end
+    score(2) = queda_z;
+    message3 = 'Distância em x: ';
+    dist_x = input(message3);
     
-    message3 = 'distância em x: ';
-    score(3) = input(message3)
+    tf = isfloat(dist_x);
+    TF = isempty(dist_x);
+    while (tf == 0) || (TF == 1)
+        %score = inf;
+        %print('Distancia espera um valor do tipo float.');
+        dist_x = input(message3);
+        tf = isfloat(dist_x);
+        TF = isempty(dist_x);
+    end
     
+    score(3) = dist_x;
     score(4) = 1/distancia;
     
 end
