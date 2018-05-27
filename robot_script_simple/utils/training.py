@@ -14,20 +14,42 @@ def create_client(ip):
         scp = SCPClient(ssh.get_transport(), progress=progress)
         return ssh, scp
 
+def get_options(option):
+    if option == '0':
+        exit(1)
+    elif option == '1':
+        calibration, release = 0, 1
+    elif option == '2':
+        calibration, release = 1, 0
+    else:
+        calibration, release = 0, 0
+
+    return calibration, release
+
 def main():
     IP_ADDRESS='192.168.1.100'
-    parameters = open('../../Matlab/parameters.txt', 'r')
+    print('Creating the ssh client...')
     ssh, scp = create_client(IP_ADDRESS)
 
-    #print(type(parameters.read()))
-    parameters = parameters.read()
+    option = input('What you want to do now? \n\tType 0 to finish \n \tType 1 to release the legs \n \tType 2 to recalibrate\n Option:  ')
 
-    command = 'cd ~/quad_vitor_pedro/robot_script_simple/utils && python3 gait_generation.py {}'.format(parameters)
-    _, out, _ = ssh.exec_command(command, get_pty=True)
-    print(out.read())
-    command = 'cd ~/quad_vitor_pedro/robot_script_simple/main && ./main 1'
-    _, out, _ = ssh.exec_command(command, get_pty=True)
-    print(out.read())
+    calibration, release = get_options(option)
+    while(True):
+        #print(type(parameters.read()))
+        parameters_file = open('../../Matlab/parameters.txt', 'r')
+        parameters = parameters_file.read()
+        print('Generating gait')
+        command = 'cd ~/quad_vitor_pedro/robot_script_simple/utils && python3 gait_generation.py {}'.format(parameters)
+        _, out, _ = ssh.exec_command(command, get_pty=True)
+        print(out.read())
+        print('Walking...')
+        command = 'cd ~/quad_vitor_pedro/robot_script_simple/main && ./main 1 {} {}'.format(calibration, release)
+        _, out, _ = ssh.exec_command(command, get_pty=True)
+        print(out.read().decode())
+        parameters_file.close()
+        print('What you want to do now? \n\tType 0 to finish \n \tType 1 to release the legs \n \tType 2 to recalibrate\n Option:  ')
+        option = input()
+        calibration, release = get_options(option)
 
 
 if __name__ == "__main__":

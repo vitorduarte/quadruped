@@ -64,8 +64,14 @@ void write_file_vec(vector<float> vec, ofstream &output_file){
 }
 int main(int argc, char *argv[])
 {
+    cout << argc << endl;
+    if(argc != 4){
+        cout << "Usage: ./main gait calibra solta" << endl;
+        return 1;
+    }
+
     command cmd;
-    string marcha="marcha";
+    string marcha="gaits/marcha";
     marcha+=argv[1];
     marcha+=".txt";
     ifstream arq(marcha.c_str());
@@ -75,6 +81,8 @@ int main(int argc, char *argv[])
     ofstream arq_x("measurements/acceleration_x.txt");
     ofstream arq_y("measurements/acceleration_y.txt");
     ofstream arq_z("measurements/acceleration_z.txt");
+    int calibra = atoi(argv[2]);
+    int solta = atoi(argv[3]);
 
 
     char *dev_name = (char*)DEVICENAME;
@@ -103,14 +111,14 @@ int main(int argc, char *argv[])
     int USB = open( "/dev/ttyACM0", O_RDWR| O_NOCTTY );
     close(USB);
     USB = open( "/dev/ttyACM0", O_RDWR| O_NOCTTY );
-    
+
     float temp_val[7];
     float h;
 
     size_t inic, fim;
-    
+
     string temp,temp2;
-    
+
     vector<float> xAccel;
     vector<float> yAccel;
     vector<float> zAccel;
@@ -179,14 +187,14 @@ int main(int argc, char *argv[])
     cmd.write_torque(portHandler, packetHandler, BROADCASTID, 0);
     cmd.config_ram(portHandler, packetHandler);
     //Calibraçao
-    printf("======================Calibracao================================\n==========Mantenha todas a patas na posicao central ==========\n");
-    printf("deseja iniciar a calibracao?? 1 para sim \n");
-    cin>>X;
+    //printf("======================Calibracao================================\n==========Mantenha todas a patas na posicao central ==========\n");
+    //printf("deseja iniciar a calibracao?? 1 para sim \n");
+    //cin>>X;
 
-    if(X  == 1)
+    if(calibra  == 1)
     {
-        printf("X=1   Aperte qualquer tecla para iniciar a calibracao\n");
-        cmd.getch();
+        //printf("X=1   Aperte qualquer tecla para iniciar a calibracao\n");
+        //cmd.getch();
         cmd.calibra(portHandler, packetHandler, vetor_centro);
 
         printf("\nCalibração concluida\n");
@@ -209,7 +217,7 @@ int main(int argc, char *argv[])
         arq2.close();
     }
 
-    cmd.getch();
+    //cmd.getch();
     arq>>lido[0]>>lido[1]>>lido[2];
     arq>>lido[3]>>lido[4]>>lido[5];
     arq>>lido[6]>>lido[7]>>lido[8];
@@ -251,10 +259,10 @@ int main(int argc, char *argv[])
         abs(atual[6]-anguloscor[6])>10||abs(atual[7]-anguloscor[7])>10||abs(atual[8]-anguloscor[8])>10||
         abs(atual[9]-anguloscor[9])>10||abs(atual[10]-anguloscor[10])>10||abs(atual[11]-anguloscor[11])>10);
 
-    cout<<"\nPosiçao inicial\n";
-    cout<<"aperte qualquer tecla para continuar\n";
-    cmd.getch();
-
+    //cout<<"\nPosiçao inicial\n";
+    //cout<<"aperte qualquer tecla para continuar\n";
+    //cmd.getch();
+    sleep(1);
     //laço principal
     while(!arq.eof())
     {
@@ -348,21 +356,23 @@ int main(int argc, char *argv[])
         contador++;
     }
     //print_vector(timestamp);
-    zPos = acc2pos(zAccel, timestamp);
-    xPos = acc2pos(xAccel, timestamp);
-    yPos = acc2pos(yAccel, timestamp);
-    write_file_vec(xAccel,arq_x);
-    write_file_vec(yAccel,arq_y);
-    write_file_vec(zAccel,arq_z);
-    write_file_vec(timestamp, arq_time);
-    cout << "ACELERAÇÃO EM Z" << endl;
-    print_vector(zAccel);
+    //zPos = acc2pos(zAccel, timestamp);
+    //xPos = acc2pos(xAccel, timestamp);
+    //yPos = acc2pos(yAccel, timestamp);
+    //write_file_vec(xAccel,arq_x);
+    //write_file_vec(yAccel,arq_y);
+    //write_file_vec(zAccel,arq_z);
+    //write_file_vec(timestamp, arq_time);
+    //cout << "ACELERAÇÃO EM Z" << endl;
+    //print_vector(zAccel);
     //cout << "\n\nPOSICAO EM Z" << endl;
     //print_vector(zPos);
     arq.close();
     arq3.close();
-    getchar();
-    cmd.write_torque(portHandler, packetHandler, BROADCASTID, (uint8_t) 0);
+    //getchar();
+    if(solta == 1){
+        cmd.write_torque(portHandler, packetHandler, BROADCASTID, (uint8_t) 0);
+    }
     // Close port
     portHandler->closePort();
     close(USB);
