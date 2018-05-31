@@ -1,17 +1,17 @@
 function score = online_training(parametros)
     
-    angle_back = parametros(1); %angulo da passada para trás-> algoritmo genetico pode aprender isso
+    angle_back = parametros(1); %angulo da passada para trï¿½s-> algoritmo genetico pode aprender isso
     angle_front = parametros(2);%angulo da passada para frente -> ''   ''  ''  ''  ''
-    x_p = parametros(3); %posição x da ponta da pata na pose de transição trás -> frente 
-    y_p = parametros(4); %posição y da ponta da pata na pose de transição trás -> frente
-    z_p = parametros(5); %posição z da ponta da pata na pose de transição trás -> frente
+    x_p = parametros(3); %posiï¿½ï¿½o x da ponta da pata na pose de transiï¿½ï¿½o trï¿½s -> frente 
+    y_p = parametros(4); %posiï¿½ï¿½o y da ponta da pata na pose de transiï¿½ï¿½o trï¿½s -> frente
+    z_p = parametros(5); %posiï¿½ï¿½o z da ponta da pata na pose de transiï¿½ï¿½o trï¿½s -> frente
     
     
-    parameters = [angle_back angle_front x_p y_p z_p];
+    parameters = [angle_back angle_front x_p y_p z_p]
     dlmwrite('parameters.txt',parameters, 'delimiter', ' ','newline', 'pc');
     
     
-    dist = 'Distância medida: ';
+    dist = 'Distï¿½ncia medida: ';
     temp = 'Tempo: ';
     
     distancia = input(dist);
@@ -48,7 +48,7 @@ function score = online_training(parametros)
         TF = isempty(queda_z);        
     end
     score(2) = queda_z;
-    message3 = 'Distância em x: ';
+    message3 = 'Distï¿½ncia em x: ';
     dist_x = input(message3);
     
     tf = isfloat(dist_x);
@@ -62,6 +62,6 @@ function score = online_training(parametros)
     end
     
     score(3) = dist_x;
-    score(4) = 1/distancia;
+    %score(4) = 1/distancia;
     
 end

@@ -81,6 +81,11 @@ int main(int argc, char *argv[])
     ofstream arq_x("measurements/acceleration_x.txt");
     ofstream arq_y("measurements/acceleration_y.txt");
     ofstream arq_z("measurements/acceleration_z.txt");
+    ofstream arq_s1("measurements/s1.txt");
+    ofstream arq_s2("measurements/s2.txt");
+    ofstream arq_s3("measurements/s3.txt");
+    ofstream arq_s4("measurements/s4.txt");
+
     int calibra = atoi(argv[2]);
     int solta = atoi(argv[3]);
 
@@ -135,7 +140,6 @@ int main(int argc, char *argv[])
 
     long time_seconds, time_useconds;
     struct timeval init_time, actual_time;
-    gettimeofday(&init_time, NULL);
 
     struct termios tty;
     struct termios tty_old;
@@ -263,6 +267,7 @@ int main(int argc, char *argv[])
     //cout<<"aperte qualquer tecla para continuar\n";
     //cmd.getch();
     sleep(1);
+    gettimeofday(&init_time, NULL);
     //laço principal
     while(!arq.eof())
     {
@@ -338,8 +343,12 @@ int main(int argc, char *argv[])
             }
             tcflush( USB, TCIFLUSH );
             xAccel.push_back(temp_val[1]);
-            yAccel.push_back(-temp_val[0]);
+            yAccel.push_back(temp_val[0]);
             zAccel.push_back(temp_val[2]);
+            S1.push_back(temp_val[3]);
+            S2.push_back(temp_val[4]);
+            S3.push_back(temp_val[5]);
+            S4.push_back(temp_val[6]);
 
             gettimeofday(&actual_time, NULL);
             time_seconds = actual_time.tv_sec - init_time.tv_sec;
@@ -355,20 +364,34 @@ int main(int argc, char *argv[])
 
         contador++;
     }
-    //print_vector(timestamp);
-    //zPos = acc2pos(zAccel, timestamp);
-    //xPos = acc2pos(xAccel, timestamp);
-    //yPos = acc2pos(yAccel, timestamp);
-    //write_file_vec(xAccel,arq_x);
-    //write_file_vec(yAccel,arq_y);
-    //write_file_vec(zAccel,arq_z);
-    //write_file_vec(timestamp, arq_time);
+    cout << "Tempo da marcha: " << timestamp[timestamp.size()-1] << endl;
+    zPos = acc2pos(zAccel, timestamp);
+    xPos = acc2pos(xAccel, timestamp);
+    yPos = acc2pos(yAccel, timestamp);
+    write_file_vec(xAccel,arq_x);
+    write_file_vec(yAccel,arq_y);
+    write_file_vec(zAccel,arq_z);
+    write_file_vec(timestamp, arq_time);
+    write_file_vec(S1, arq_s1);
+    write_file_vec(S2, arq_s2);
+    write_file_vec(S3, arq_s3);
+    write_file_vec(S4, arq_s4);
+
     //cout << "ACELERAÇÃO EM Z" << endl;
     //print_vector(zAccel);
     //cout << "\n\nPOSICAO EM Z" << endl;
     //print_vector(zPos);
     arq.close();
     arq3.close();
+    arq_x.close();
+    arq_y.close();
+    arq_z.close();
+    arq_x.close();
+    arq_s1.close();
+    arq_s2.close();
+    arq_s3.close();
+    arq_s4.close();
+    arq_time.close();
     //getchar();
     if(solta == 1){
         cmd.write_torque(portHandler, packetHandler, BROADCASTID, (uint8_t) 0);

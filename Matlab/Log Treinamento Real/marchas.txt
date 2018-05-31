@@ -1,0 +1,5356 @@
+>> [-0.1961 -0.353 -0.2354 -0.1961 -0.2354 -0.0785 -0.1569 -0.1961 -0.2354 0.1569 -0.2746 0.0392 0 -0.353 0.0392 -0.4707 -0.2354 -0.3138 -0.1177 -0.0785 -0.1569 -0.0785 -0.2746 -0.1961 -0.1177 -0.0392 -0.1177 -0.1177 -0.2354 -0.0392 -0.1569 -0.353 -0.0392 -0.4315 -0.2746 -0.3138 0.0392 -0.1961 -0.353 -0.0392 -0.1177 -0.2746 -0.0785 0.0785 -0.0785 -0.0392 0 -0.4315 -0.3138 -0.1961 -0.3923 -0.0785 -0.1177 -0.3923 -0.1961 -0.1569 -0.2354 0.0392 -0.2354 -0.2354 -0.2746 -0.5099 -0.1961 0.2746 -0.2354 -0.4707 0.353 -0.5492 -0.2746 -0.4707 -0.4707 -0.1961 -0.5884 -0.2354 0.4315 -0.6669 -0.1961 -0.3923 -0.1177 -0.0785 -0.2354 0.0392 -0.1961 0.0392 -0.0392 -0.0392 -0.0785 -0.3923 -0.4315 -0.353 -0.1569 -0.0785 -0.1177 0.0785 -0.1177 -0.2354 -0.1961 -0.1961 -0.0785 -0.1177 -0.3923 -0.353 -0.2746 -0.0392 -0.2354 0.1961 -0.1569 -0.353 -0.0785 -0.3138 0.0785 0 -0.1569 -0.1177 -0.2354 -0.1177 -0.2354 -0.1177 -0.1569 0 -0.2354 -0.0392 -0.0785 -0.0785 -0.1177 0.0392 0.0392 -0.0392 -0.1569 0.0392 -0.0392 -0.2746 -0.6669 -0.2354 -0.1961 0.0392 -0.1961 -0.0392 0 -0.353 -0.0785 -0.0785 0 0.0785 0 -0.4707 -0.4707 -0.0392 -0.0785 0 0 -0.0785 -0.3923 -0.3138 -0.2746 0.2746 0 -0.0392 -0.353 -0.2746 -0.0392 -0.1961 -0.1569 -0.0392 -0.1961 0 -0.4315 -0.3138 -0.0392 -0.3138 -0.2746 0.0392 -0.353 0.1569 -0.0785 -0.7453 -0.2746 -0.2746 -0.0392 -0.5884 -0.0392 -0.7061 -0.3923 0 -0.1177 -0.2354 -0.2354 -0.2354 -0.2354 -0.3138 -0.1177 -0.1569 -0.1177 -0.2354 -0.0392 -0.2354 -0.1961 -0.0392 0 -0.0785 -0.3138 -0.5099 -0.5099 -0.1961 -0.3923 -0.0392 -0.0392 -0.2746 -0.0785 -0.1177 0.0392 -0.6276 -0.5492 0.2746 -0.5099 -0.2746 0.0392 -0.4315 -0.1961 0.0785 -0.4707 -0.0392 0.4707 -0.2354 0 -0.4707 0.0392 -0.0785 -0.3923 -0.1569 -0.1177 -0.353 -0.1569 0 -0.0785 -0.1961 -0.2746 -0.1961 -0.3138 -0.1177 0.1177 -0.3923 -0.2746 -0.3923 -0.1961 -0.1961 -0.1569 -0.1961 0.0392 0 -0.4315 -0.1569 -0.1569 0.1569 -0.1961 -0.2354 -0.1961 -0.7061 -0.3138 -0.3138 -0.353 -0.2354 -0.1177 -0.3138 -0.2746 -0.3138 -0.0785 -0.2746 -0.2746 -0.2354 -0.0785 -0.1177 -0.0785 -0.1569 -0.1177 -0.1569 -0.353 -0.1177 0.1961 -0.1569 -0.1569 0.1177 -0.4315 -0.2746 -0.1569 -0.0392 -0.1177 -0.2746 -0.1177 -0.0785 -0.6669 -0.5099 0.0392 -0.4315 -0.3923 -0.0392 -0.2746 -0.1177 0.1961 0 -0.0785 -0.1569 -0.5884 -0.0785 -0.2354 -0.1177 -0.0785 -0.2746 -0.1961 0.0392 -0.1177 0.0785 0.0392 0 -0.1177 0.0785 -0.0392]
+
+ans =
+
+  Columns 1 through 8
+
+   -0.1961   -0.3530   -0.2354   -0.1961   -0.2354   -0.0785   -0.1569   -0.1961
+
+  Columns 9 through 16
+
+   -0.2354    0.1569   -0.2746    0.0392         0   -0.3530    0.0392   -0.4707
+
+  Columns 17 through 24
+
+   -0.2354   -0.3138   -0.1177   -0.0785   -0.1569   -0.0785   -0.2746   -0.1961
+
+  Columns 25 through 32
+
+   -0.1177   -0.0392   -0.1177   -0.1177   -0.2354   -0.0392   -0.1569   -0.3530
+
+  Columns 33 through 40
+
+   -0.0392   -0.4315   -0.2746   -0.3138    0.0392   -0.1961   -0.3530   -0.0392
+
+  Columns 41 through 48
+
+   -0.1177   -0.2746   -0.0785    0.0785   -0.0785   -0.0392         0   -0.4315
+
+  Columns 49 through 56
+
+   -0.3138   -0.1961   -0.3923   -0.0785   -0.1177   -0.3923   -0.1961   -0.1569
+
+  Columns 57 through 64
+
+   -0.2354    0.0392   -0.2354   -0.2354   -0.2746   -0.5099   -0.1961    0.2746
+
+  Columns 65 through 72
+
+   -0.2354   -0.4707    0.3530   -0.5492   -0.2746   -0.4707   -0.4707   -0.1961
+
+  Columns 73 through 80
+
+   -0.5884   -0.2354    0.4315   -0.6669   -0.1961   -0.3923   -0.1177   -0.0785
+
+  Columns 81 through 88
+
+   -0.2354    0.0392   -0.1961    0.0392   -0.0392   -0.0392   -0.0785   -0.3923
+
+  Columns 89 through 96
+
+   -0.4315   -0.3530   -0.1569   -0.0785   -0.1177    0.0785   -0.1177   -0.2354
+
+  Columns 97 through 104
+
+   -0.1961   -0.1961   -0.0785   -0.1177   -0.3923   -0.3530   -0.2746   -0.0392
+
+  Columns 105 through 112
+
+   -0.2354    0.1961   -0.1569   -0.3530   -0.0785   -0.3138    0.0785         0
+
+  Columns 113 through 120
+
+   -0.1569   -0.1177   -0.2354   -0.1177   -0.2354   -0.1177   -0.1569         0
+
+  Columns 121 through 128
+
+   -0.2354   -0.0392   -0.0785   -0.0785   -0.1177    0.0392    0.0392   -0.0392
+
+  Columns 129 through 136
+
+   -0.1569    0.0392   -0.0392   -0.2746   -0.6669   -0.2354   -0.1961    0.0392
+
+  Columns 137 through 144
+
+   -0.1961   -0.0392         0   -0.3530   -0.0785   -0.0785         0    0.0785
+
+  Columns 145 through 152
+
+         0   -0.4707   -0.4707   -0.0392   -0.0785         0         0   -0.0785
+
+  Columns 153 through 160
+
+   -0.3923   -0.3138   -0.2746    0.2746         0   -0.0392   -0.3530   -0.2746
+
+  Columns 161 through 168
+
+   -0.0392   -0.1961   -0.1569   -0.0392   -0.1961         0   -0.4315   -0.3138
+
+  Columns 169 through 176
+
+   -0.0392   -0.3138   -0.2746    0.0392   -0.3530    0.1569   -0.0785   -0.7453
+
+  Columns 177 through 184
+
+   -0.2746   -0.2746   -0.0392   -0.5884   -0.0392   -0.7061   -0.3923         0
+
+  Columns 185 through 192
+
+   -0.1177   -0.2354   -0.2354   -0.2354   -0.2354   -0.3138   -0.1177   -0.1569
+
+  Columns 193 through 200
+
+   -0.1177   -0.2354   -0.0392   -0.2354   -0.1961   -0.0392         0   -0.0785
+
+  Columns 201 through 208
+
+   -0.3138   -0.5099   -0.5099   -0.1961   -0.3923   -0.0392   -0.0392   -0.2746
+
+  Columns 209 through 216
+
+   -0.0785   -0.1177    0.0392   -0.6276   -0.5492    0.2746   -0.5099   -0.2746
+
+  Columns 217 through 224
+
+    0.0392   -0.4315   -0.1961    0.0785   -0.4707   -0.0392    0.4707   -0.2354
+
+  Columns 225 through 232
+
+         0   -0.4707    0.0392   -0.0785   -0.3923   -0.1569   -0.1177   -0.3530
+
+  Columns 233 through 240
+
+   -0.1569         0   -0.0785   -0.1961   -0.2746   -0.1961   -0.3138   -0.1177
+
+  Columns 241 through 248
+
+    0.1177   -0.3923   -0.2746   -0.3923   -0.1961   -0.1961   -0.1569   -0.1961
+
+  Columns 249 through 256
+
+    0.0392         0   -0.4315   -0.1569   -0.1569    0.1569   -0.1961   -0.2354
+
+  Columns 257 through 264
+
+   -0.1961   -0.7061   -0.3138   -0.3138   -0.3530   -0.2354   -0.1177   -0.3138
+
+  Columns 265 through 272
+
+   -0.2746   -0.3138   -0.0785   -0.2746   -0.2746   -0.2354   -0.0785   -0.1177
+
+  Columns 273 through 280
+
+   -0.0785   -0.1569   -0.1177   -0.1569   -0.3530   -0.1177    0.1961   -0.1569
+
+  Columns 281 through 288
+
+   -0.1569    0.1177   -0.4315   -0.2746   -0.1569   -0.0392   -0.1177   -0.2746
+
+  Columns 289 through 296
+
+   -0.1177   -0.0785   -0.6669   -0.5099    0.0392   -0.4315   -0.3923   -0.0392
+
+  Columns 297 through 304
+
+   -0.2746   -0.1177    0.1961         0   -0.0785   -0.1569   -0.5884   -0.0785
+
+  Columns 305 through 312
+
+   -0.2354   -0.1177   -0.0785   -0.2746   -0.1961    0.0392   -0.1177    0.0785
+
+  Columns 313 through 317
+
+    0.0392         0   -0.1177    0.0785   -0.0392
+
+>> [-0.1961 -0.353 -0.2354 -0.1961 -0.2354 -0.0785 -0.1569 -0.1961 -0.2354 0.1569 -0.2746 0.0392 0 -0.353 0.0392 -0.4707 -0.2354 -0.3138 -0.1177 -0.0785 -0.1569 -0.0785 -0.2746 -0.1961 -0.1177 -0.0392 -0.1177 -0.1177 -0.2354 -0.0392 -0.1569 -0.353 -0.0392 -0.4315 -0.2746 -0.3138 0.0392 -0.1961 -0.353 -0.0392 -0.1177 -0.2746 -0.0785 0.0785 -0.0785 -0.0392 0 -0.4315 -0.3138 -0.1961 -0.3923 -0.0785 -0.1177 -0.3923 -0.1961 -0.1569 -0.2354 0.0392 -0.2354 -0.2354 -0.2746 -0.5099 -0.1961 0.2746 -0.2354 -0.4707 0.353 -0.5492 -0.2746 -0.4707 -0.4707 -0.1961 -0.5884 -0.2354 0.4315 -0.6669 -0.1961 -0.3923 -0.1177 -0.0785 -0.2354 0.0392 -0.1961 0.0392 -0.0392 -0.0392 -0.0785 -0.3923 -0.4315 -0.353 -0.1569 -0.0785 -0.1177 0.0785 -0.1177 -0.2354 -0.1961 -0.1961 -0.0785 -0.1177 -0.3923 -0.353 -0.2746 -0.0392 -0.2354 0.1961 -0.1569 -0.353 -0.0785 -0.3138 0.0785 0 -0.1569 -0.1177 -0.2354 -0.1177 -0.2354 -0.1177 -0.1569 0 -0.2354 -0.0392 -0.0785 -0.0785 -0.1177 0.0392 0.0392 -0.0392 -0.1569 0.0392 -0.0392 -0.2746 -0.6669 -0.2354 -0.1961 0.0392 -0.1961 -0.0392 0 -0.353 -0.0785 -0.0785 0 0.0785 0 -0.4707 -0.4707 -0.0392 -0.0785 0 0 -0.0785 -0.3923 -0.3138 -0.2746 0.2746 0 -0.0392 -0.353 -0.2746 -0.0392 -0.1961 -0.1569 -0.0392 -0.1961 0 -0.4315 -0.3138 -0.0392 -0.3138 -0.2746 0.0392 -0.353 0.1569 -0.0785 -0.7453 -0.2746 -0.2746 -0.0392 -0.5884 -0.0392 -0.7061 -0.3923 0 -0.1177 -0.2354 -0.2354 -0.2354 -0.2354 -0.3138 -0.1177 -0.1569 -0.1177 -0.2354 -0.0392 -0.2354 -0.1961 -0.0392 0 -0.0785 -0.3138 -0.5099 -0.5099 -0.1961 -0.3923 -0.0392 -0.0392 -0.2746 -0.0785 -0.1177 0.0392 -0.6276 -0.5492 0.2746 -0.5099 -0.2746 0.0392 -0.4315 -0.1961 0.0785 -0.4707 -0.0392 0.4707 -0.2354 0 -0.4707 0.0392 -0.0785 -0.3923 -0.1569 -0.1177 -0.353 -0.1569 0 -0.0785 -0.1961 -0.2746 -0.1961 -0.3138 -0.1177 0.1177 -0.3923 -0.2746 -0.3923 -0.1961 -0.1961 -0.1569 -0.1961 0.0392 0 -0.4315 -0.1569 -0.1569 0.1569 -0.1961 -0.2354 -0.1961 -0.7061 -0.3138 -0.3138 -0.353 -0.2354 -0.1177 -0.3138 -0.2746 -0.3138 -0.0785 -0.2746 -0.2746 -0.2354 -0.0785 -0.1177 -0.0785 -0.1569 -0.1177 -0.1569 -0.353 -0.1177 0.1961 -0.1569 -0.1569 0.1177 -0.4315 -0.2746 -0.1569 -0.0392 -0.1177 -0.2746 -0.1177 -0.0785 -0.6669 -0.5099 0.0392 -0.4315 -0.3923 -0.0392 -0.2746 -0.1177 0.1961 0 -0.0785 -0.1569 -0.5884 -0.0785 -0.2354 -0.1177 -0.0785 -0.2746 -0.1961 0.0392 -0.1177 0.0785 0.0392 0 -0.1177 0.0785 -0.0392]
+>> a = [-0.1961 -0.353 -0.2354 -0.1961 -0.2354 -0.0785 -0.1569 -0.1961 -0.2354 0.1569 -0.2746 0.0392 0 -0.353 0.0392 -0.4707 -0.2354 -0.3138 -0.1177 -0.0785 -0.1569 -0.0785 -0.2746 -0.1961 -0.1177 -0.0392 -0.1177 -0.1177 -0.2354 -0.0392 -0.1569 -0.353 -0.0392 -0.4315 -0.2746 -0.3138 0.0392 -0.1961 -0.353 -0.0392 -0.1177 -0.2746 -0.0785 0.0785 -0.0785 -0.0392 0 -0.4315 -0.3138 -0.1961 -0.3923 -0.0785 -0.1177 -0.3923 -0.1961 -0.1569 -0.2354 0.0392 -0.2354 -0.2354 -0.2746 -0.5099 -0.1961 0.2746 -0.2354 -0.4707 0.353 -0.5492 -0.2746 -0.4707 -0.4707 -0.1961 -0.5884 -0.2354 0.4315 -0.6669 -0.1961 -0.3923 -0.1177 -0.0785 -0.2354 0.0392 -0.1961 0.0392 -0.0392 -0.0392 -0.0785 -0.3923 -0.4315 -0.353 -0.1569 -0.0785 -0.1177 0.0785 -0.1177 -0.2354 -0.1961 -0.1961 -0.0785 -0.1177 -0.3923 -0.353 -0.2746 -0.0392 -0.2354 0.1961 -0.1569 -0.353 -0.0785 -0.3138 0.0785 0 -0.1569 -0.1177 -0.2354 -0.1177 -0.2354 -0.1177 -0.1569 0 -0.2354 -0.0392 -0.0785 -0.0785 -0.1177 0.0392 0.0392 -0.0392 -0.1569 0.0392 -0.0392 -0.2746 -0.6669 -0.2354 -0.1961 0.0392 -0.1961 -0.0392 0 -0.353 -0.0785 -0.0785 0 0.0785 0 -0.4707 -0.4707 -0.0392 -0.0785 0 0 -0.0785 -0.3923 -0.3138 -0.2746 0.2746 0 -0.0392 -0.353 -0.2746 -0.0392 -0.1961 -0.1569 -0.0392 -0.1961 0 -0.4315 -0.3138 -0.0392 -0.3138 -0.2746 0.0392 -0.353 0.1569 -0.0785 -0.7453 -0.2746 -0.2746 -0.0392 -0.5884 -0.0392 -0.7061 -0.3923 0 -0.1177 -0.2354 -0.2354 -0.2354 -0.2354 -0.3138 -0.1177 -0.1569 -0.1177 -0.2354 -0.0392 -0.2354 -0.1961 -0.0392 0 -0.0785 -0.3138 -0.5099 -0.5099 -0.1961 -0.3923 -0.0392 -0.0392 -0.2746 -0.0785 -0.1177 0.0392 -0.6276 -0.5492 0.2746 -0.5099 -0.2746 0.0392 -0.4315 -0.1961 0.0785 -0.4707 -0.0392 0.4707 -0.2354 0 -0.4707 0.0392 -0.0785 -0.3923 -0.1569 -0.1177 -0.353 -0.1569 0 -0.0785 -0.1961 -0.2746 -0.1961 -0.3138 -0.1177 0.1177 -0.3923 -0.2746 -0.3923 -0.1961 -0.1961 -0.1569 -0.1961 0.0392 0 -0.4315 -0.1569 -0.1569 0.1569 -0.1961 -0.2354 -0.1961 -0.7061 -0.3138 -0.3138 -0.353 -0.2354 -0.1177 -0.3138 -0.2746 -0.3138 -0.0785 -0.2746 -0.2746 -0.2354 -0.0785 -0.1177 -0.0785 -0.1569 -0.1177 -0.1569 -0.353 -0.1177 0.1961 -0.1569 -0.1569 0.1177 -0.4315 -0.2746 -0.1569 -0.0392 -0.1177 -0.2746 -0.1177 -0.0785 -0.6669 -0.5099 0.0392 -0.4315 -0.3923 -0.0392 -0.2746 -0.1177 0.1961 0 -0.0785 -0.1569 -0.5884 -0.0785 -0.2354 -0.1177 -0.0785 -0.2746 -0.1961 0.0392 -0.1177 0.0785 0.0392 0 -0.1177 0.0785 -0.0392]
+
+a =
+
+  Columns 1 through 8
+
+   -0.1961   -0.3530   -0.2354   -0.1961   -0.2354   -0.0785   -0.1569   -0.1961
+
+  Columns 9 through 16
+
+   -0.2354    0.1569   -0.2746    0.0392         0   -0.3530    0.0392   -0.4707
+
+  Columns 17 through 24
+
+   -0.2354   -0.3138   -0.1177   -0.0785   -0.1569   -0.0785   -0.2746   -0.1961
+
+  Columns 25 through 32
+
+   -0.1177   -0.0392   -0.1177   -0.1177   -0.2354   -0.0392   -0.1569   -0.3530
+
+  Columns 33 through 40
+
+   -0.0392   -0.4315   -0.2746   -0.3138    0.0392   -0.1961   -0.3530   -0.0392
+
+  Columns 41 through 48
+
+   -0.1177   -0.2746   -0.0785    0.0785   -0.0785   -0.0392         0   -0.4315
+
+  Columns 49 through 56
+
+   -0.3138   -0.1961   -0.3923   -0.0785   -0.1177   -0.3923   -0.1961   -0.1569
+
+  Columns 57 through 64
+
+   -0.2354    0.0392   -0.2354   -0.2354   -0.2746   -0.5099   -0.1961    0.2746
+
+  Columns 65 through 72
+
+   -0.2354   -0.4707    0.3530   -0.5492   -0.2746   -0.4707   -0.4707   -0.1961
+
+  Columns 73 through 80
+
+   -0.5884   -0.2354    0.4315   -0.6669   -0.1961   -0.3923   -0.1177   -0.0785
+
+  Columns 81 through 88
+
+   -0.2354    0.0392   -0.1961    0.0392   -0.0392   -0.0392   -0.0785   -0.3923
+
+  Columns 89 through 96
+
+   -0.4315   -0.3530   -0.1569   -0.0785   -0.1177    0.0785   -0.1177   -0.2354
+
+  Columns 97 through 104
+
+   -0.1961   -0.1961   -0.0785   -0.1177   -0.3923   -0.3530   -0.2746   -0.0392
+
+  Columns 105 through 112
+
+   -0.2354    0.1961   -0.1569   -0.3530   -0.0785   -0.3138    0.0785         0
+
+  Columns 113 through 120
+
+   -0.1569   -0.1177   -0.2354   -0.1177   -0.2354   -0.1177   -0.1569         0
+
+  Columns 121 through 128
+
+   -0.2354   -0.0392   -0.0785   -0.0785   -0.1177    0.0392    0.0392   -0.0392
+
+  Columns 129 through 136
+
+   -0.1569    0.0392   -0.0392   -0.2746   -0.6669   -0.2354   -0.1961    0.0392
+
+  Columns 137 through 144
+
+   -0.1961   -0.0392         0   -0.3530   -0.0785   -0.0785         0    0.0785
+
+  Columns 145 through 152
+
+         0   -0.4707   -0.4707   -0.0392   -0.0785         0         0   -0.0785
+
+  Columns 153 through 160
+
+   -0.3923   -0.3138   -0.2746    0.2746         0   -0.0392   -0.3530   -0.2746
+
+  Columns 161 through 168
+
+   -0.0392   -0.1961   -0.1569   -0.0392   -0.1961         0   -0.4315   -0.3138
+
+  Columns 169 through 176
+
+   -0.0392   -0.3138   -0.2746    0.0392   -0.3530    0.1569   -0.0785   -0.7453
+
+  Columns 177 through 184
+
+   -0.2746   -0.2746   -0.0392   -0.5884   -0.0392   -0.7061   -0.3923         0
+
+  Columns 185 through 192
+
+   -0.1177   -0.2354   -0.2354   -0.2354   -0.2354   -0.3138   -0.1177   -0.1569
+
+  Columns 193 through 200
+
+   -0.1177   -0.2354   -0.0392   -0.2354   -0.1961   -0.0392         0   -0.0785
+
+  Columns 201 through 208
+
+   -0.3138   -0.5099   -0.5099   -0.1961   -0.3923   -0.0392   -0.0392   -0.2746
+
+  Columns 209 through 216
+
+   -0.0785   -0.1177    0.0392   -0.6276   -0.5492    0.2746   -0.5099   -0.2746
+
+  Columns 217 through 224
+
+    0.0392   -0.4315   -0.1961    0.0785   -0.4707   -0.0392    0.4707   -0.2354
+
+  Columns 225 through 232
+
+         0   -0.4707    0.0392   -0.0785   -0.3923   -0.1569   -0.1177   -0.3530
+
+  Columns 233 through 240
+
+   -0.1569         0   -0.0785   -0.1961   -0.2746   -0.1961   -0.3138   -0.1177
+
+  Columns 241 through 248
+
+    0.1177   -0.3923   -0.2746   -0.3923   -0.1961   -0.1961   -0.1569   -0.1961
+
+  Columns 249 through 256
+
+    0.0392         0   -0.4315   -0.1569   -0.1569    0.1569   -0.1961   -0.2354
+
+  Columns 257 through 264
+
+   -0.1961   -0.7061   -0.3138   -0.3138   -0.3530   -0.2354   -0.1177   -0.3138
+
+  Columns 265 through 272
+
+   -0.2746   -0.3138   -0.0785   -0.2746   -0.2746   -0.2354   -0.0785   -0.1177
+
+  Columns 273 through 280
+
+   -0.0785   -0.1569   -0.1177   -0.1569   -0.3530   -0.1177    0.1961   -0.1569
+
+  Columns 281 through 288
+
+   -0.1569    0.1177   -0.4315   -0.2746   -0.1569   -0.0392   -0.1177   -0.2746
+
+  Columns 289 through 296
+
+   -0.1177   -0.0785   -0.6669   -0.5099    0.0392   -0.4315   -0.3923   -0.0392
+
+  Columns 297 through 304
+
+   -0.2746   -0.1177    0.1961         0   -0.0785   -0.1569   -0.5884   -0.0785
+
+  Columns 305 through 312
+
+   -0.2354   -0.1177   -0.0785   -0.2746   -0.1961    0.0392   -0.1177    0.0785
+
+  Columns 313 through 317
+
+    0.0392         0   -0.1177    0.0785   -0.0392
+
+>> 10/317
+
+ans =
+
+    0.0315
+
+Cannot write to preference file "matlab.prf" in "/home/vitor/.matlab/R2017a".
+Check file permissions.
+>> online_training
+Not enough input arguments.
+
+Error in online_training (line 3)
+    angle_back = parametros(1); %angulo da passada para tr�s-> algoritmo genetico
+    pode aprender isso
+
+>> online_training([1 2 3 4 5])
+Dist�ncia medida: adsfasdas
+Error using input
+Undefined function or variable 'adsfasdas'.
+
+Error in online_training (line 17)
+    distancia = input(dist);
+
+Dist�ncia medida: asdas
+Error using input
+Undefined function or variable 'asdas'.
+
+Error in online_training (line 17)
+    distancia = input(dist);
+
+Dist�ncia medida: sad
+Error using input
+Undefined function or variable 'sad'.
+
+Error in online_training (line 17)
+    distancia = input(dist);
+
+Dist�ncia medida: asd
+Error using input
+Undefined function or variable 'asd'.
+
+Error in online_training (line 17)
+    distancia = input(dist);
+
+Dist�ncia medida: asdd
+Error using input
+Undefined function or variable 'asdd'.
+
+Error in online_training (line 17)
+    distancia = input(dist);
+
+Dist�ncia medida:
+Dist�ncia medida:
+Dist�ncia medida:
+Dist�ncia medida:
+Dist�ncia medida:
+Dist�ncia medida:
+Dist�ncia medida:
+Dist�ncia medida: asd
+Error using input
+Undefined function or variable 'asd'.
+
+Error in online_training (line 23)
+        distancia = input(dist);
+
+Dist�ncia medida: asd
+Error using input
+Undefined function or variable 'asd'.
+
+Error in online_training (line 23)
+        distancia = input(dist);
+
+Dist�ncia medida: as
+Error using input
+Undefined function or variable 'as'.
+
+Error in online_training (line 23)
+        distancia = input(dist);
+
+Dist�ncia medida: das
+Error using input
+Undefined function or variable 'das'.
+
+Error in online_training (line 23)
+        distancia = input(dist);
+
+Dist�ncia medida: d
+Error using input
+Undefined function or variable 'd'.
+
+Error in online_training (line 23)
+        distancia = input(dist);
+
+Dist�ncia medida: as3,2
+Error using online_training (line 23)
+Error: Unexpected MATLAB expression.
+
+Dist�ncia medida: 3,2
+Error using online_training (line 23)
+Error: Unexpected MATLAB expression.
+
+Dist�ncia medida: 2.3
+Tempo: sdfsadf
+Error using input
+Undefined function or variable 'sdfsadf'.
+
+Error in online_training (line 27)
+    tempo = input(temp);
+
+Tempo: asd
+Error using input
+Undefined function or variable 'asd'.
+
+Error in online_training (line 27)
+    tempo = input(temp);
+
+Tempo: aas
+Error using input
+Undefined function or variable 'aas'.
+
+Error in online_training (line 27)
+    tempo = input(temp);
+
+Tempo: das
+Error using input
+Undefined function or variable 'das'.
+
+Error in online_training (line 27)
+    tempo = input(temp);
+
+Tempo: d3
+Error using input
+Undefined function or variable 'd3'.
+
+Error in online_training (line 27)
+    tempo = input(temp);
+
+Tempo: 3sad
+Error using online_training (line 27)
+Error: Unexpected MATLAB expression.
+
+>> 3sad
+ 3sad
+  ↑
+Error: Unexpected MATLAB expression.
+
+Did you mean:
+>> 3*sadd3
+Undefined function or variable 'sadd3'.
+
+Did you mean:
+>> 3*sadd
+Error using sadd (line 21)
+usage: sys = sadd(sys1,sys2,...)
+
+>> online_training
+Not enough input arguments.
+
+Error in online_training (line 3)
+    angle_back = parametros(1); %angulo da passada para tr�s-> algoritmo genetico
+    pode aprender isso
+
+>> online_training([1 2 3 4 5])
+Dist�ncia medida:
+Dist�ncia medida:
+Dist�ncia medida:
+Dist�ncia medida:
+Dist�ncia medida:
+Dist�ncia medida:
+Dist�ncia medida:
+Dist�ncia medida: ds
+Error using input
+Undefined function or variable 'ds'.
+
+Error in online_training (line 23)
+        distancia = input(dist);
+
+Dist�ncia medida: d
+Error using input
+Undefined function or variable 'd'.
+
+Error in online_training (line 23)
+        distancia = input(dist);
+
+Dist�ncia medida: d
+Error using input
+Undefined function or variable 'd'.
+
+Error in online_training (line 23)
+        distancia = input(dist);
+
+Dist�ncia medida: 3
+Tempo:
+Tempo:
+Tempo:
+Tempo:
+Tempo:
+Tempo:
+Tempo:
+Tempo:
+Tempo:
+Tempo:
+Tempo:
+Tempo:
+Tempo:
+Tempo: as
+Error using input
+Undefined function or variable 'as'.
+
+Error in online_training (line 33)
+        tempo = input(temp);
+
+Tempo: a
+Error using input
+Undefined function or variable 'a'.
+
+Error in online_training (line 33)
+        tempo = input(temp);
+
+Tempo: s
+Error using input
+Undefined function or variable 's'.
+
+Error in online_training (line 33)
+        tempo = input(temp);
+
+Tempo: s
+Error using input
+Undefined function or variable 's'.
+
+Error in online_training (line 33)
+        tempo = input(temp);
+
+Tempo: d
+Error using input
+Undefined function or variable 'd'.
+
+Error in online_training (line 33)
+        tempo = input(temp);
+
+Tempo: sad
+Error using input
+Undefined function or variable 'sad'.
+
+Error in online_training (line 33)
+        tempo = input(temp);
+
+Tempo: sad
+Error using input
+Undefined function or variable 'sad'.
+
+Error in online_training (line 33)
+        tempo = input(temp);
+
+Tempo: sa
+Error using input
+Undefined function or variable 'sa'.
+
+Error in online_training (line 33)
+        tempo = input(temp);
+
+Tempo: das
+Error using input
+Undefined function or variable 'das'.
+
+Error in online_training (line 33)
+        tempo = input(temp);
+
+Tempo: d
+Error using input
+Undefined function or variable 'd'.
+
+Error in online_training (line 33)
+        tempo = input(temp);
+
+Tempo: 3.2
+Queda em z:
+Queda em z:
+Queda em z:
+Queda em z:
+Queda em z:
+Queda em z:
+Queda em z:
+Queda em z: 565,k
+Error using online_training (line 46)
+Error: Unexpected MATLAB expression.
+
+Queda em z: 5,95
+Error using online_training (line 46)
+Error: Unexpected MATLAB expression.
+
+Queda em z: 62.6
+Dist�ncia em x: 626
+
+ans =
+
+    1.0667   62.6000  626.0000    0.3333
+
+Cannot write to preference file "matlab.prf" in "/home/vitor/.matlab/R2017a".
+Check file permissions.
+>> online_training([1 2 3 4.21 5])
+Dist�ncia medida:
+Operation terminated by user during online_training (line 17)
+
+Operation terminated by user during optimtool (line 178)
+
+
+Dist�ncia medida: 49
+Tempo: 7.11
+Queda em z: 1
+Dist�ncia em x: 4
+Dist�ncia medida: 48
+Tempo: 7.19
+Queda em z: 1
+Dist�ncia em x: 6.5
+Dist�ncia medida:
+Operation terminated by user during
+online_training (line 17)
+
+
+In
+createAnonymousFcn>@(x)fcn(x,FcnArgs{:})
+(line 11)
+fcn_handle = @(x) fcn(x,FcnArgs{:});
+
+In gamultiobjMakeState (line 28)
+    Score =
+    FitnessFcn(state.Population(1,:));
+
+In gamultiobjsolve (line 8)
+state =
+gamultiobjMakeState(GenomeLength,FitnessFcn,ConstrFcn,output.problemtype,options);
+
+In gamultiobj (line 276)
+[x,fval,exitFlag,output,population,scores]
+= gamultiobjsolve(FitnessFcn,nvars, ...
+
+In callSolver (line 32)
+[solverOutput{:}] =
+feval(str2func(solver),probStruct);
+
+In optimguirun (line 40)
+    resultStruct =
+    callSolver(probStruct,optStruct);
+
+In optimguiswitchyard (line 14)
+	[varargout{1:nargout}]=feval(action,varargin{:});
+
+
+parameters =
+
+  Columns 1 through 3
+
+   20.6195   34.6468   20.7601
+
+  Columns 4 through 5
+
+   -3.3744    0.4311
+
+Dist�ncia medida:
+Operation terminated by user during
+online_training (line 17)
+
+
+In
+createAnonymousFcn>@(x)fcn(x,FcnArgs{:})
+(line 11)
+fcn_handle = @(x) fcn(x,FcnArgs{:});
+
+In gamultiobjMakeState (line 28)
+    Score =
+    FitnessFcn(state.Population(1,:));
+
+In gamultiobjsolve (line 8)
+state =
+gamultiobjMakeState(GenomeLength,FitnessFcn,ConstrFcn,output.problemtype,options);
+
+In gamultiobj (line 276)
+[x,fval,exitFlag,output,population,scores]
+= gamultiobjsolve(FitnessFcn,nvars, ...
+
+In callSolver (line 32)
+[solverOutput{:}] =
+feval(str2func(solver),probStruct);
+
+In optimguirun (line 40)
+    resultStruct =
+    callSolver(probStruct,optStruct);
+
+In optimguiswitchyard (line 14)
+	[varargout{1:nargout}]=feval(action,varargin{:});
+
+>>
+>>
+>>
+
+parameters =
+
+  Columns 1 through 3
+
+   20.6195   34.6468   20.7601
+
+  Columns 4 through 5
+
+   -3.3744    0.4311
+
+Dist�ncia medida: 50
+Tempo: 7.31
+Queda em z: 1
+Dist�ncia em x: 2
+
+parameters =
+
+   37.5498   50.6207   17.7475   -2.2177    2.8375
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   35.2623   51.8080   18.9591   -1.4147    3.0187
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 59
+Tempo: 7.68
+Queda em z: 1
+Dist�ncia em x: 2.5
+
+parameters =
+
+   35.2623   51.8080   18.9591   -3.3744    3.0187
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   37.5498   32.0582   17.7475   -1.6420    0.4311
+
+Dist�ncia medida: 25.5
+Tempo: 13.15
+Queda em z: 4.75
+Dist�ncia em x: 6
+
+parameters =
+
+   37.5498   50.6207   17.7475   -2.2177    2.8375
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   35.2623   51.8080   19.9591   -1.4147    3.0187
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9247   34.6468   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.6195   34.6468   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   37.5498   50.6207   17.7475   -1.6420    2.8375
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9247   34.6468   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 62.5
+Tempo: 7.73
+Queda em z: 1.25
+Dist�ncia em x: 4
+
+parameters =
+
+   27.9247   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.6195   34.6468   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.6195   32.0582   20.7601   -1.6420    0.4311
+
+Dist�ncia medida: 41.5
+Tempo: 7.76
+Queda em z: 1.5
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   19.6767   -3.3744    0.4311
+
+Dist�ncia medida: 50
+Tempo: 9.45
+Queda em z: 1.75
+Dist�ncia em x: 8.5
+
+parameters =
+
+   20.6195   34.6468   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 48
+Tempo: 7.175
+Queda em z: 1
+Dist�ncia em x: 3
+
+parameters =
+
+   27.9247   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 66
+Tempo: 7.52
+Queda em z: 1
+Dist�ncia em x: 2
+
+parameters =
+
+   20.6195   34.6468   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 38
+Tempo: 7.93
+Queda em z: 3
+Dist�ncia em x: 9.5
+
+parameters =
+
+   27.9247   35.6468   20.6767   -1.6420    1.4311
+
+Dist�ncia medida: 62
+Tempo: 8.24
+Queda em z: 2
+Dist�ncia em x: 2.5
+
+parameters =
+
+   20.6195   34.6468   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 40
+Tempo: 8.89
+Queda em z: 3
+Dist�ncia em x: 7.5
+
+parameters =
+
+   20.6195   32.0582   20.7601   -1.6420    0.4311
+
+Dist�ncia medida: 45.5
+Tempo: 7.58
+Queda em z: 1.5
+Dist�ncia em x: 2
+
+parameters =
+
+   21.1195   34.6468   20.7601   -2.8744    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.6195   32.0582   20.7601   -1.6420    0.4311
+
+Dist�ncia medida: 45
+Tempo: 7.72
+Queda em z: 1.75
+Dist�ncia em x: 3
+
+parameters =
+
+   27.9247   32.0582   20.7601   -3.3744    1.4311
+
+Dist�ncia medida: 60.5
+Tempo: 7.74
+Queda em z: 2.25
+Dist�ncia em x: 11
+
+parameters =
+
+   27.9247   35.6468   20.6767   -1.6420    1.4311
+
+Dist�ncia medida: 61.5
+Tempo: 7.98
+Queda em z: 1.75
+Dist�ncia em x: 4.5
+
+parameters =
+
+   20.6195   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.6195   34.8968   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.6195   32.0582   20.7601   -1.6420    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9247   35.6468   20.6767   -1.6420    1.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9247   32.0582   20.7601   -1.6420    0.4311
+
+Dist�ncia medida: 59
+Tempo: 7.95
+Queda em z: 1.25
+Dist�ncia em x: 1.5
+
+parameters =
+
+   20.6195   35.6468   20.6767   -1.6420    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.4945   34.7093   20.8539   -3.3744    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.6195   32.0582   20.7601   -1.6420    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9247   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 63
+Tempo: 7.50
+Queda em z: 1.25
+Dist�ncia em x: 11
+
+parameters =
+
+   20.6195   32.0582   20.7601   -3.3744    1.4311
+
+Dist�ncia medida: 50.5
+Tempo: 6.91
+Queda em z: 1.5
+Dist�ncia em x: 13.5
+
+parameters =
+
+   27.9247   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 62.5
+Tempo: 7.49
+Queda em z: 1
+Dist�ncia em x: 9
+
+parameters =
+
+   20.5570   32.0582   20.7601   -1.6420    0.4311
+
+Dist�ncia medida: 48
+Tempo: 7.49
+Queda em z: 1
+Dist�ncia em x: 16.5
+
+parameters =
+
+   27.9247   35.6468   20.6767   -1.6420    1.4311
+
+Dist�ncia medida: 56
+Tempo: 8.40
+Queda em z: 2
+Dist�ncia em x: 7
+
+parameters =
+
+   27.9247   35.6468   20.6767   -1.6420    1.4311
+
+Dist�ncia medida: 56
+Tempo: 8.4
+Queda em z: 2
+Dist�ncia em x: 7
+
+parameters =
+
+   20.6195   32.0582   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 52
+Tempo: 6.97
+Queda em z: 1.5
+Dist�ncia em x: 15.5
+
+parameters =
+
+   27.9247   32.0582   17.7475   -3.3744    0.4311
+
+Dist�ncia medida: 29
+Tempo: 12.65
+Queda em z: 4.75
+Dist�ncia em x: 16
+
+parameters =
+
+   27.9560   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 60.5
+Tempo: 7.63
+Queda em z: 1.25
+Dist�ncia em x: 16
+
+parameters =
+
+   20.6195   34.6468   20.7601   -1.6420    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9247   35.6468   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9247   34.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.6195   34.6468   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9247   35.6512   20.6767   -1.6420    1.4155
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 63
+Tempo: 7.41
+Queda em z: 1
+Dist�ncia em x: 2
+
+parameters =
+
+   27.9247   35.6468   20.6767   -1.6420    1.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9247   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9247   35.6468   20.6767   -1.6420    1.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.6273   32.0582   20.7663   -1.6420    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 74
+Tempo: 7.64
+Queda em z: 1.5
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 65
+Tempo: 7.39
+Queda em z: 1
+Dist�ncia em x: 2
+
+parameters =
+
+   27.9247   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 62.5
+Tempo: 7.58
+Queda em z: 3
+Dist�ncia em x: 3
+
+parameters =
+
+   27.9247   32.0582   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   27.9262   35.6507   20.6795   -3.3713    1.4315
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.6195   32.0582   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.6195   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.6195   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 42.5
+Tempo: 7.28
+Queda em z: 3
+Dist�ncia em x: 6
+
+parameters =
+
+   20.6195   35.6468   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 0
+Tempo: inf
+Queda em z: inf
+Dist�ncia em x: inf
+
+parameters =
+
+   20.6207   32.0657   20.7601   -1.6498    0.4311
+
+Dist�ncia medida: 42
+Tempo: 7.55
+Queda em z: 2
+Dist�ncia em x: 7
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.41
+Queda em z: 1.5
+Dist�ncia em x: 7
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 59
+Tempo: 7.43
+Queda em z: 1.25
+Dist�ncia em x: 9
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 56.5
+Tempo: 7.73
+Queda em z: 1.5
+Dist�ncia em x: 11
+
+parameters =
+
+   27.9247   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 64
+Tempo: 7.46
+Queda em z: 1.5
+Dist�ncia em x: 8
+
+parameters =
+
+   27.9254   32.0621   20.6767   -3.3712    0.4311
+
+Dist�ncia medida: 58.5
+Tempo: 7.65
+Queda em z: 1.25
+Dist�ncia em x: 12
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 59
+Tempo: 7.40
+Queda em z: 1
+Dist�ncia em x: 12
+
+parameters =
+
+   27.9247   32.0582   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 59.5
+Tempo: 7.55
+Queda em z: 1
+Dist�ncia em x: 12
+
+parameters =
+
+   20.6195   35.6468   20.6767   -1.6420    0.4311
+
+Dist�ncia medida: 49
+Tempo: 7.74
+Queda em z: 2
+Dist�ncia em x: 12.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 60
+Tempo: 7.39
+Queda em z: 1
+Dist�ncia em x: 9.5
+
+parameters =
+
+   27.9247   32.0562   20.6767   -3.3735    1.4311
+
+Dist�ncia medida: 60
+Tempo: 7.47
+Queda em z: 1.5
+Dist�ncia em x: 6
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.39
+Queda em z: 1.5
+Dist�ncia em x: 10
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 58
+Tempo: 7.64
+Queda em z: 1.25
+Dist�ncia em x: 12.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.43
+Queda em z: 1.25
+Dist�ncia em x: 6.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 58
+Tempo: 7.67
+Queda em z: 1.25
+Dist�ncia em x: 9
+
+parameters =
+
+   27.9237   32.0582   20.6767   -3.3744    1.4312
+
+Dist�ncia medida: 60
+Tempo: 7.36
+Queda em z: 1.25
+Dist�ncia em x: 9
+
+parameters =
+
+   20.6195   32.0582   20.6767   -1.6420    0.4311
+
+Dist�ncia medida: 48.5
+Tempo: 7.74
+Queda em z: 1.5
+Dist�ncia em x: 17
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 58
+Tempo: 7.68
+Queda em z: 1.25
+Dist�ncia em x: 9
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 56
+Tempo: 7.64
+Queda em z: 1.5
+Dist�ncia em x: 10
+
+parameters =
+
+   27.9247   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 64
+Tempo: 7.57
+Queda em z: 1.5
+Dist�ncia em x: 14
+
+parameters =
+
+   27.9252   32.0587   20.6772   -3.3741    1.4313
+
+Dist�ncia medida: 59
+Tempo: 7.44
+Queda em z: 1.5
+Dist�ncia em x: 11
+
+parameters =
+
+   27.9247   32.0582   20.6767   -1.6420    0.4311
+
+Dist�ncia medida: 56.5
+Tempo: 8.05
+Queda em z: 1.5
+Dist�ncia em x: 10
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 57.5
+Tempo: 7.57
+Queda em z: 1.25
+Dist�ncia em x: 10.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 57.5
+Tempo: 7.66
+Queda em z: 1.25
+Dist�ncia em x: 10
+
+parameters =
+
+   27.9247   32.0582   20.6767   -1.6420    0.4311
+
+Dist�ncia medida: 48.5
+Tempo: 8.12
+Queda em z: 2.5
+Dist�ncia em x: 15
+
+parameters =
+
+   27.9248   32.0580   20.6768   -3.3742    1.4312
+
+Dist�ncia medida: 59
+Tempo: 7.43
+Queda em z: 1
+Dist�ncia em x: 5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 56.5
+Tempo: 7.63
+Queda em z: 1.25
+Dist�ncia em x: 13
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 60
+Tempo: 7.42
+Queda em z: 1
+Dist�ncia em x: 6.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 56.5
+Tempo: 7.62
+Queda em z: 1.5
+Dist�ncia em x: 9
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58.5
+Tempo: 7.39
+Queda em z: 1.25
+Dist�ncia em x: 8
+
+parameters =
+
+   27.9246   32.0583   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58.5
+Tempo: 7.44
+Queda em z: 1
+Dist�ncia em x: 9
+
+parameters =
+
+   27.9247   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida:
+Dist�ncia medida: 64
+Tempo: 7.54
+Queda em z: 1.25
+Dist�ncia em x: 12
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 59
+Tempo: 7.41
+Queda em z: 1.25
+Dist�ncia em x: 9
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 60
+Tempo: 7.37
+Queda em z: 1.25
+Dist�ncia em x: 8
+
+parameters =
+
+   27.9247   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 65
+Tempo: 7.51
+Queda em z: 1.25
+Dist�ncia em x: 11
+
+parameters =
+
+   27.9248   32.0582   20.6766   -3.3744    0.4311
+
+Dist�ncia medida: 56
+Tempo: 7.68
+Queda em z: 1.25
+Dist�ncia em x: 9
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 59
+Tempo: 7.38
+Queda em z: 1.25
+Dist�ncia em x: 9.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58.5
+Tempo: 7.35
+Queda em z: 1.25
+Dist�ncia em x: 10
+
+parameters =
+
+   20.6195   32.0582   20.6767   -1.6420    1.4311
+
+Dist�ncia medida: 50.5
+Tempo: 7.62
+Queda em z: 1.25
+Dist�ncia em x: 15
+
+parameters =
+
+   20.6195   32.0582   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 50
+Tempo: 7.13
+Queda em z: 1.3
+Dist�ncia em x: 10
+
+parameters =
+
+   27.9247   32.0582   20.6768   -3.3744    0.4311
+
+Dist�ncia medida: 56
+Tempo: 7.56403
+Queda em z: 1.25
+Dist�ncia em x: 10.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 56.5
+Tempo: 7.36
+Queda em z: 1.25
+Dist�ncia em x: 8.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 56.5
+Tempo: 7.40
+Queda em z: 1.25
+Dist�ncia em x: 7.5
+
+parameters =
+
+   27.9247   35.6468   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 62.5
+Tempo: 7.47
+Queda em z: 1.25
+Dist�ncia em x: 13
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 57
+Tempo: 7.42
+Queda em z: 1.25
+Dist�ncia em x: 8
+
+parameters =
+
+   27.9248   32.0583   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 57.5
+Tempo: 7.40
+Queda em z: 1.3
+Dist�ncia em x: 8.5
+
+parameters =
+
+   27.9247   32.0582   20.7601   -1.6420    0.4311
+
+Dist�ncia medida: 54
+Tempo: 7.88
+Queda em z: 1.5
+Dist�ncia em x: 9.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 56.5
+Tempo: 7.36
+Queda em z: 1.25
+Dist�ncia em x: 8.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 57.5
+Tempo: 7.37
+Queda em z: 1.25
+Dist�ncia em x: 8.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.40
+Queda em z: 1.25
+Dist�ncia em x: 7.5
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 56
+Tempo: 7.43
+Queda em z: 1.25
+Dist�ncia em x: 8.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 56
+Tempo: 7.36
+Queda em z: 1.25
+Dist�ncia em x: 8.5
+
+parameters =
+
+   20.6195   32.0582   20.6767   -1.6420    0.4311
+
+Dist�ncia medida: 49
+Tempo: 7.73
+Queda em z: 1
+Dist�ncia em x: 17
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 56.5
+Tempo: 7.46
+Queda em z: 1.25
+Dist�ncia em x: 11.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 57
+Tempo: 7.38
+Queda em z: 1.25
+Dist�ncia em x: 7.5
+
+parameters =
+
+   27.9245   32.0584   20.6769   -3.3743    1.4312
+
+Dist�ncia medida: 57.5
+Tempo: 7.43
+Queda em z: 1.25
+Dist�ncia em x: 9.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 57.5
+Tempo: 7.39
+Queda em z: 1.25
+Dist�ncia em x: 10
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 57.5
+Tempo: 7.41
+Queda em z: 1.25
+Dist�ncia em x: 9
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 56
+Tempo: 7.47
+Queda em z: 1.25
+Dist�ncia em x: 13
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.38
+Queda em z: 1.25
+Dist�ncia em x: 11.5
+
+parameters =
+
+   20.6196   32.0583   20.7602   -1.6420    0.4312
+
+Dist�ncia medida: 50
+Tempo: 7.56
+Queda em z: 1
+Dist�ncia em x: 17.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 56
+Tempo: 7.49
+Queda em z: 1.25
+Dist�ncia em x: 8
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 54
+Tempo: 7.66
+Queda em z: 1.25
+Dist�ncia em x: 11.5
+
+parameters =
+
+   20.6195   32.0582   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 51.5
+Tempo: 7.03
+Queda em z: 1.1
+Dist�ncia em x: 10
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 56
+Tempo: 7.41
+Queda em z: 1.25
+Dist�ncia em x: 9
+
+parameters =
+
+   27.9248   32.0583   20.6768   -3.3743    0.4312
+
+Dist�ncia medida: 53
+Tempo: 7.68
+Queda em z: 1.25
+Dist�ncia em x: 10
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 56
+Tempo: 7.34
+Queda em z: 1.25
+Dist�ncia em x: 7
+
+parameters =
+
+   27.9247   32.0582   20.6767   -1.6420    1.4311
+
+Dist�ncia medida: 52.5
+Tempo: 7.84
+Queda em z: 1.1
+Dist�ncia em x: 9
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 57.5
+Tempo: 7.43
+Queda em z: 1.25
+Dist�ncia em x: 9.5
+
+parameters =
+
+   20.6195   32.0582   20.7601   -1.6420    1.4311
+
+Dist�ncia medida: 50
+Tempo: 7.32
+Queda em z: 1.25
+Dist�ncia em x: 14.5
+
+parameters =
+
+   20.6196   32.0582   20.7602   -1.6419    0.4312
+
+Dist�ncia medida: 49.5
+Tempo: 7.59
+Queda em z: 1.25
+Dist�ncia em x: 18
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 42
+Tempo: 7.71
+Queda em z: 1.25
+Dist�ncia em x: 3
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 46.5
+Tempo: 1
+Queda em z: 1.25
+Dist�ncia em x: 1
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 54.5
+Tempo: 7.39
+Queda em z: 1.25
+Dist�ncia em x: 2.5
+
+parameters =
+
+   20.6195   32.0582   20.6767   -1.6420    0.4311
+
+Dist�ncia medida: 46.5
+Tempo: 7.70
+Queda em z: 1.5
+Dist�ncia em x: 6
+
+parameters =
+
+   27.9248   32.0581   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 50.5
+Tempo: 7.34
+Queda em z: 1.25
+Dist�ncia em x: 1
+
+parameters =
+
+   20.6195   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 54.5
+Tempo: 7.17
+Queda em z: 1
+Dist�ncia em x: 4
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 54
+Tempo: 7.38
+Queda em z: 1.25
+Dist�ncia em x: 2.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 54.5
+Tempo: 7.64
+Queda em z: 1.25
+Dist�ncia em x: 3
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 50.5
+Tempo: 7.43
+Queda em z: 1.5
+Dist�ncia em x: 6.5
+
+parameters =
+
+   27.9248   32.0582   20.6766   -3.3743    1.4311
+
+Dist�ncia medida: 52.5
+Tempo: 7.39
+Queda em z: 1.25
+Dist�ncia em x: 3.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 50.5
+Tempo: 7.37
+Queda em z: 1.5
+Dist�ncia em x: 10
+
+parameters =
+
+   27.9247   32.0582   20.6767   -1.6420    0.4311
+
+Dist�ncia medida: 48
+Tempo: 8.08
+Queda em z: 1.25
+Dist�ncia em x: 4
+
+parameters =
+
+   20.6195   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 53.5
+Tempo: 7.24
+Queda em z: 1
+Dist�ncia em x: 3.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 57.5
+Tempo: 7.68
+Queda em z: 1.25
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0581   20.6768   -3.3744    0.4312
+
+Dist�ncia medida: 53.5
+Tempo: 7.65
+Queda em z: 1.25
+Dist�ncia em x: 3
+
+parameters =
+
+   27.9247   32.0582   20.7601   -1.6420    1.4311
+
+Dist�ncia medida: 51
+Tempo: 7.59
+Queda em z: 1.5
+Dist�ncia em x: 10.5
+
+parameters =
+
+   27.9247   32.0582   20.7601   -1.6420    0.4311
+
+Dist�ncia medida: 45
+Tempo: 7.89
+Queda em z: 1.75
+Dist�ncia em x: 2
+
+parameters =
+
+   20.6195   32.0582   20.7601   -3.3744    0.4311
+
+Dist�ncia medida: 51.5
+Tempo: 7.09
+Queda em z: 1.25
+Dist�ncia em x: 0
+
+parameters =
+
+   20.6195   32.0582   20.6767   -1.6420    0.4311
+
+Dist�ncia medida: 48.5
+Tempo: 7.71
+Queda em z: 1.5
+Dist�ncia em x: 8
+
+parameters =
+
+   20.6196   32.0583   20.7601   -1.6420    0.4311
+
+Dist�ncia medida: 49
+Tempo: 7.53
+Queda em z: 1.5
+Dist�ncia em x: 9.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 53.5
+Tempo: 7.42
+Queda em z: 1.25
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 51
+Tempo: 7.57
+Queda em z: 1.75
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 53
+Tempo: 7.59
+Queda em z: 1.75
+Dist�ncia em x: 2
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 54.5
+Tempo: 7.39
+Queda em z: 1.25
+Dist�ncia em x: 5
+
+parameters =
+
+   27.9247   32.0582   20.6768   -3.3743    0.4312
+
+Dist�ncia medida: 55
+Tempo: 7.60
+Queda em z: 1.5
+Dist�ncia em x: 1
+
+parameters =
+
+   20.6195   32.0582   20.6767   -1.6420    0.4311
+
+Dist�ncia medida: 45.5
+Tempo: 7.67
+Queda em z: 1.75
+Dist�ncia em x: 7.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 53.5
+Tempo: 7.41
+Queda em z: 1.25
+Dist�ncia em x: 1.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 52
+Tempo: 7.62
+Queda em z: 1.25
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 53
+Tempo: 7.63
+Queda em z: 1.25
+Dist�ncia em x: 2
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3744    1.4312
+
+Dist�ncia medida: 51.5
+Tempo: 7.37
+Queda em z: 1.5
+Dist�ncia em x: 4
+
+parameters =
+
+   20.6195   32.0582   20.7601   -1.6420    0.4311
+
+Dist�ncia medida: 49
+Tempo: 7.59
+Queda em z: 1.75
+Dist�ncia em x: 9.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 48.5
+Tempo: 7.39
+Queda em z: 1.25
+Dist�ncia em x: 6
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 50.5
+Tempo: 7.62
+Queda em z: 1.5
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -1.6420    1.4311
+
+Dist�ncia medida: 48.5
+Tempo: 7.84
+Queda em z: 1.5
+Dist�ncia em x: 6
+
+parameters =
+
+   27.9247   32.0582   20.6766   -3.3743    1.4311
+
+Dist�ncia medida: 56
+Tempo: 7.37
+Queda em z: 1.5
+Dist�ncia em x: 2
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.32
+Queda em z: 1.3
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 56.5
+Tempo: 7.45
+Queda em z: 1.5
+Dist�ncia em x: 2.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 55
+Tempo: 7.34
+Queda em z: 1.5
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 54
+Tempo: 7.3
+Queda em z: 1.3
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6768   -3.3745    0.4311
+
+Dist�ncia medida: 52
+Tempo: 7.60
+Queda em z: 1.75
+Dist�ncia em x: 7
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 57
+Tempo: 7.32
+Queda em z: 1.25
+Dist�ncia em x: 2.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 54.5
+Tempo: 7.67
+Queda em z: 1.3
+Dist�ncia em x: 2
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 56
+Tempo: 7.39
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 60.5
+Tempo: 7.3
+Queda em z: 1
+Dist�ncia em x: 4
+
+parameters =
+
+   27.9247   32.0582   20.6768   -3.3744    1.4309
+
+Dist�ncia medida: 57.5
+Tempo: 7.37
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 61
+Tempo: 7.68
+Queda em z: 1
+Dist�ncia em x: 4
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 56.5
+Tempo: 7.61
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 61
+Tempo: 7.68
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.68
+Queda em z: 1
+Dist�ncia em x: 2
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3745    1.4311
+
+Dist�ncia medida: 60
+Tempo: 7.45
+Queda em z: 1
+Dist�ncia em x: 1.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 60
+Tempo: 7.43
+Queda em z: 1
+Dist�ncia em x: 2.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 61
+Tempo: 7.41
+Queda em z: 1
+Dist�ncia em x: 5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 63
+Tempo: 7.64
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 60
+Tempo: 7.39
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0581   20.6768   -3.3743    1.4311
+
+Dist�ncia medida: 62
+Tempo: 7.34
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.61
+Queda em z: 1
+Dist�ncia em x: 3.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 60
+Tempo: 7.39
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 61
+Tempo: 7.66
+Queda em z: 1
+Dist�ncia em x: 2
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 63
+Tempo: 7.33
+Queda em z: 1
+Dist�ncia em x: 3
+
+parameters =
+
+   27.9248   32.0582   20.6768   -3.3744    0.4312
+
+Dist�ncia medida: 61
+Tempo: 7.59
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 60
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 63.5
+Tempo: 8.03
+Queda em z: 1
+Dist�ncia em x: 3
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida:
+Dist�ncia medida: 60
+Tempo: 7.35
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.45
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9246   32.0582   20.6767   -3.3744    1.4312
+
+Dist�ncia medida: 57
+Tempo: 7.38
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58.5
+Tempo: 7.43
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 60
+Tempo: 7.42
+Queda em z: 1
+Dist�ncia em x: 1
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 60
+Tempo: 7.38
+Queda em z: 1
+Dist�ncia em x: 4
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 57.5
+Tempo: 7.40
+Queda em z: 1
+Dist�ncia em x: 3
+
+parameters =
+
+   27.9246   32.0582   20.6767   -3.3743    1.4312
+
+Dist�ncia medida: 60
+Tempo: 7.39
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 58.5
+Tempo: 7.64
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.58
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 59
+Tempo: 7.42
+Queda em z: 1
+Dist�ncia em x: 1
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 59
+Tempo: 7.34
+Queda em z: 1
+Dist�ncia em x: 3
+
+parameters =
+
+   27.9247   32.0581   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 61
+Tempo: 7.41
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 61
+Tempo: 7.68
+Queda em z: 1
+Dist�ncia em x: 2.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 59
+Tempo: 7.45
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 62
+Tempo: 7.65
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 60
+Tempo: 7.37
+Queda em z: 1
+Dist�ncia em x: 4
+
+parameters =
+
+   27.9248   32.0582   20.6768   -3.3744    1.4312
+
+Dist�ncia medida: 61
+Tempo: 7.34
+Queda em z: 1
+Dist�ncia em x: 4
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.69
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 57.5
+Tempo: 7.39
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.67
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 57.5
+Tempo: 7.38
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.70
+Queda em z: 1
+Dist�ncia em x: 2.5
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.67
+Queda em z: 1
+Dist�ncia em x: 2
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 57.5
+Tempo: 7.67
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 58
+Tempo: 7.62
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.65
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3745    0.4312
+
+Dist�ncia medida: 57.5
+Tempo: 7.70
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 58
+Tempo: 7.59
+Queda em z: 1
+Dist�ncia em x: 2
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.65
+Queda em z: 1
+Dist�ncia em x: 2
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.63
+Queda em z: 1
+Dist�ncia em x: 3
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 59
+Tempo: 7.62
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3743    1.4312
+
+Dist�ncia medida: 55.5
+Tempo: 7.38
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 55.5
+Tempo: 7.42
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.66
+Queda em z: 1
+Dist�ncia em x: 2
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.38
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 59
+Tempo: 7.61
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3745    1.4311
+
+Dist�ncia medida: 59
+Tempo: 7.39
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 60
+Tempo: 7.44
+Queda em z: 1
+Dist�ncia em x: 4
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 57
+Tempo: 7.35
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 59
+Tempo: 7.35
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 62
+Tempo: 7.68
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6768   -3.3744    0.4312
+
+Dist�ncia medida: 60
+Tempo: 7.66
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.67
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.64
+Queda em z: 1
+Dist�ncia em x: 3
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3744    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3745    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9246   32.0582   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9246   32.0582   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9246   32.0582   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9246   32.0582   20.6768   -3.3746    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9246   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6768   -3.3746    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9246   32.0582   20.6768   -3.3746    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6766   -3.3743    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6766   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6766   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3745    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3744    0.4312
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9246   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6768   -3.3743    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6768   -3.3743    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0581   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0583   20.6767   -3.3743    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0583   20.6767   -3.3745    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6766   -3.3743    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6766   -3.3743    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6768   -3.3744    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6768   -3.3744    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3745    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3743    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9245   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3744    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0583   20.6767   -3.3743    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 5.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6768   -3.3743    0.4312
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6769   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0581   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0581   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6768   -3.3743    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0583   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3745    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3745    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9246   32.0582   20.6768   -3.3743    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9246   32.0582   20.6768   -3.3744    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6768   -3.3743    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9246   32.0582   20.6768   -3.3743    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6766   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6766   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6768   -3.3743    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0583   20.6768   -3.3743    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0583   20.6768   -3.3743    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 0
+Dist�ncia em x: 1
+
+parameters =
+
+   27.9248   32.0581   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9249   32.0582   20.6769   -3.3742    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3743    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3743    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3743    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6766   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6768   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3745    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0581   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6766   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0583   20.6767   -3.3745    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6766   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3744    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0581   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0581   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0583   20.6767   -3.3745    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0583   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 0
+Dist�ncia em x: 1
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3743    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3743    0.4312
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0580   20.6768   -3.3744    1.4313
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0583   20.6768   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6768   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3743    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9248   32.0582   20.6767   -3.3744    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0583   20.6768   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    0.4311
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6768   -3.3743    0.4312
+
+Dist�ncia medida: 60
+Tempo: 7.6
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9247   32.0582   20.6767   -3.3744    1.4311
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+
+parameters =
+
+   27.9246   32.0582   20.6767   -3.3743    1.4312
+
+Dist�ncia medida: 58
+Tempo: 7.4
+Queda em z: 1
+Dist�ncia em x: 0
+Optimization terminated: average change in the spread of Pareto solutions less than options.FunctionTolerance.
+The variables 'realproblem', 'realoptions' and 'realresults' have been created in the current workspace.
+>> clear a, ans
+
+ans =
+
+    1.0667   62.6000  626.0000    0.3333
