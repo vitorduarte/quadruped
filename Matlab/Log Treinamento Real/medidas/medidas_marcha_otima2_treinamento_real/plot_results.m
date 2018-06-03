@@ -37,13 +37,13 @@ accelz_filtered = filter(D,accelz);
 %plot
 %acelerometer:
 subplot(2,1,1);
-plot(time,accelx);
+plot(time,accelx_filtered);
 hold on
-plot(time,accely);
+plot(time,accely_filtered);
 hold on
-plot(time, accelz);
+plot(time, accelz_filtered);
 legend('accelx','accely', 'accelz');
-title({'Gráfico da variação do acelerômetro no tempo', 'Marcha final do treinamento incompleto'});
+title({'Gráfico da variação do acelerômetro no tempo', 'Marcha ótima 2'});
 xlabel('Tempo (s)');
 ylabel('Acelerômetro (m/s^2)');
 %force sensors:
@@ -56,7 +56,7 @@ plot(time, s3);
 hold on
 plot(time,s4);
 legend('s1','s2', 's3', 's4');
-title({'Gráfico da variação dos sensores de força no tempo ', 'Marcha final do treinamento incompleto'});
+title({'Gráfico da variação dos sensores de força no tempo ', 'Marcha ótima 2'});
 xlabel('Tempo (s)');
 ylabel('Força no sensores (N)');
 

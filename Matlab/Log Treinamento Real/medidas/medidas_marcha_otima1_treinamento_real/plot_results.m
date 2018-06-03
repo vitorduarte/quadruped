@@ -43,7 +43,7 @@ plot(time,accely);
 hold on
 plot(time, accelz);
 legend('accelx','accely', 'accelz');
-title({'Gráfico da variação do acelerômetro no tempo', 'Marcha final do treinamento incompleto'});
+title({'Gráfico da variação do acelerômetro no tempo', 'Marcha ótima 1'});
 xlabel('Tempo (s)');
 ylabel('Acelerômetro (m/s^2)');
 %force sensors:
@@ -56,7 +56,7 @@ plot(time, s3);
 hold on
 plot(time,s4);
 legend('s1','s2', 's3', 's4');
-title({'Gráfico da variação dos sensores de força no tempo ', 'Marcha final do treinamento incompleto'});
+title({'Gráfico da variação dos sensores de força no tempo ', 'Marcha ótima 1'});
 xlabel('Tempo (s)');
 ylabel('Força no sensores (N)');
 
