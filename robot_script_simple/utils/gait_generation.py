@@ -56,6 +56,7 @@ def main():
         print('\tExample: ./gait_generation 45 45 20 0 0 my_gait.txt\n')
         exit(1)
     else:
+        print(sys.argv)
         try:
             angle_back = float(sys.argv[1])
             angle_front = float(sys.argv[2])
