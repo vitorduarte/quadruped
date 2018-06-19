@@ -25,12 +25,12 @@ function gait_analysis(folder_num)
     pitch = rad2deg(atan2((-x_acc), sqrt(power(y_acc, 2) + power(z_acc, 2))));
 
     % Filter roll and pitch
-    lp_filter = designfilt('lowpassfir', 'PassbandFrequency', 75, 'StopbandFrequency', 180, 'PassbandRipple', 1, 'StopbandAttenuation', 60, 'SampleRate', 1000);
+    lp_filter = designfilt('lowpassfir', 'PassbandFrequency', 75, 'StopbandFrequency', 180, 'PassbandRipple', 1, 'StopbandAttenuation', 60, 'SampleRate', 500);
     roll_filtered = filter(lp_filter,roll);
     pitch_filtered = filter(lp_filter, pitch);
 
     % Fix time delay of roll and pitch
-    delay = mean(grpdelay(lp_filter));
+    delay = round(mean(grpdelay(lp_filter)));
 
     roll_filt_fix = roll_filtered(1+delay:end);
     roll = roll(1:end-delay);
@@ -58,7 +58,6 @@ function gait_analysis(folder_num)
     title({'Gráfico do valor estimado do ângulo de arfagem'});
     xlabel('Tempo (s)');
     ylabel('Ângulo (graus)');
-    %suptitle(gait_title);
 
     % Plot motor position
     figure(2)
@@ -67,7 +66,6 @@ function gait_analysis(folder_num)
         plot(timestamp, motor_data(:,i));
         title(['Motor' num2str(i)]);
         xlabel('Tempo(s)');
-        ylabel('Posição(pwm)');
-        %suptitle(gait_title);
+        ylabel('Posição(pwm)'); 
     end
     
