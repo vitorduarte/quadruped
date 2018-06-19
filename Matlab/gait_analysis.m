@@ -48,16 +48,16 @@ function gait_analysis(folder_num)
     subplot(2,1,1);
     plot(timestamp_filt_fix, roll_filt_fix);
     grid on;
-    hold on
-    plot(timestamp_filt_fix, roll);
+    %hold on
+    %plot(timestamp_filt_fix, roll);
     title({'Gráfico do valor estimado do ângulo de rolagem'});
     xlabel('Tempo (s)');
     ylabel('Ângulo (graus)');
     subplot(2,1,2);
     plot(timestamp_filt_fix, pitch_filt_fix);
     grid on;
-    hold on
-    plot(timestamp_filt_fix, pitch);
+    %hold on
+    %plot(timestamp_filt_fix, pitch);
     title({'Gráfico do valor estimado do ângulo de arfagem'});
     xlabel('Tempo (s)');
     ylabel('Ângulo (graus)');
