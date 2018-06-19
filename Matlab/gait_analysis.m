@@ -31,14 +31,10 @@ function gait_analysis(folder_num)
 
     % Fix time delay of roll and pitch
     delay = round(mean(grpdelay(lp_filter)));
-
-    roll_filt_fix = roll_filtered(1+delay:end);
-    roll = roll(1:end-delay);
-
-    pitch_filt_fix = pitch_filtered(1+delay:end);
-    pitch = pitch(1:end-delay);
-
-    timestamp_filt_fix = timestamp(1:end-delay);
+    [~, roll_filt_fix] = fix_delay(timestamp, roll_filtered, delay);
+    %roll = roll(1:end-delay);
+    [timestamp_filt_fix, pitch_filt_fix] = fix_delay(timestamp, pitch_filtered, delay);
+    %pitch = pitch(1:end-delay);
 
     % Plot roll and pitch
     figure(1)
